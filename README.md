@@ -25,6 +25,7 @@ install.packages(
     "plumber",
     "DT",
     "gt",
+    "renv",
     "RcppSimdJson",
     "remotes",
     "b64",
