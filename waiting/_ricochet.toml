@@ -1,0 +1,15 @@
+[content]
+name = "Hi there"
+entrypoint = "app.R"
+access_type = "private"
+content_type = "shiny"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

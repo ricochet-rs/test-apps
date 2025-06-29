@@ -1,0 +1,15 @@
+[content]
+name = "Quarto Shiny App"
+entrypoint = "app.qmd"
+access_type = "private"
+content_type = "quarto-r-shiny"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

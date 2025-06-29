@@ -1,0 +1,12 @@
+[content]
+name = "serverless R!"
+entrypoint = "hello-world.R"
+access_type = "external"
+slug = "srvrless"
+content_type = "serverless-r"
+tags = ["serverless", "api", "server-fn"]
+summary = "Demo of ricochet's server function runtime for R"
+
+[language]
+name = "r"
+packages = "renv.lock"

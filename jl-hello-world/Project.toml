@@ -1,0 +1,4 @@
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+PalmerPenguins = "8b842266-38fa-440a-9b57-31493939ab85"
+Tidier = "f0413319-3358-4bb0-8e7c-0c83523a93bd"

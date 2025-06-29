@@ -1,0 +1,9 @@
+[content]
+name = "Plotly Dash Demo"
+entrypoint = "app.jl"
+access_type = "external"
+content_type = "julia-service"
+
+[language]
+name = "julia"
+packages = "Manifest.toml"

@@ -1,0 +1,12 @@
+[content]
+name = "538 Predictions"
+entrypoint = "main.Rmd"
+access_type = "external"
+content_type = "rmd"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[static]
+index = "main.html"

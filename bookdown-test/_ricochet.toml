@@ -1,0 +1,18 @@
+[content]
+name = "`{bookdown}` starter kit"
+entrypoint = "index.Rmd"
+access_type = "external"
+content_type = "rmd"
+summary = """
+An online book written in R using the `{bookdown}` package.
+
+This is the template that is provided by the [bookdown book](https://bookdown.org/yihui/bookdown/).
+"""
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[static]
+output_dir = "_book"
+index = "index.html"

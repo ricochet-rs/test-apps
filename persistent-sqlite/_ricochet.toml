@@ -1,0 +1,18 @@
+[content]
+name = "SQLite Persistence"
+tags = ["persistence", "shiny", "demo"]
+summary = "Demonstrating the use of persistent directorys in `ricochet`."
+slug = "app-persistence"
+entrypoint = "app.R"
+access_type = "external"
+content_type = "shiny"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

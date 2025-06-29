@@ -1,0 +1,12 @@
+[content]
+name = "Quarto tesst static"
+entrypoint = "dashboard.qmd"
+access_type = "private"
+content_type = "quarto-r"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[static]
+index = "dashboard.html"

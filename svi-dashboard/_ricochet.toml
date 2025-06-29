@@ -1,0 +1,17 @@
+[content]
+name = "hcde-final-viz"
+entrypoint = "shiny-svi-dashboard.R"
+access_type = "external"
+content_type = "shiny"
+include = ["shiny-svi-dashboard.R", "data/SVI2022_WASHINGTON_tract.gdb", "renv.lock"]
+slug = "wa-svi-dashboard"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

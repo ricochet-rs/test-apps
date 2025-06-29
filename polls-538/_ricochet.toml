@@ -1,0 +1,9 @@
+[content]
+name = "538 Polls Election 2024"
+entrypoint = "main.R"
+access_type = "private"
+content_type = "r"
+
+[language]
+name = "r"
+packages = "renv.lock"

@@ -1,0 +1,15 @@
+---
+title: My Document
+output: html_document
+params:
+  year: 2018
+  region: Europe
+  printcode: TRUE
+  data: file.csv
+---
+
+
+
+```{r}
+str(params)
+```

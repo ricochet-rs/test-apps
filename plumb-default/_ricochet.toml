@@ -1,0 +1,15 @@
+[content]
+name = '"Plumber API"'
+entrypoint = "plumber.R"
+access_type = "external"
+content_type = "plumber"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10
