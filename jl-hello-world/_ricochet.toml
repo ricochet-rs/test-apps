@@ -3,6 +3,7 @@ name = "Hello, Julia!"
 entrypoint = "main.jl"
 access_type = "private"
 content_type = "julia"
+id = "01K6P3N0NX54T4Q6A04PZ2Y541"
 
 [language]
 name = "julia"

@@ -1,8 +1,9 @@
 [content]
-name = "Hi there"
+name = "waiting"
 entrypoint = "app.R"
-access_type = "private"
+access_type = "internal"
 content_type = "shiny"
+id = "01K6P3M75RX32VNYYN1RX8BK9J"
 
 [language]
 name = "r"

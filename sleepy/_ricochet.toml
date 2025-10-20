@@ -3,6 +3,7 @@ name = "Long sleep"
 entrypoint = "main.R"
 access_type = "private"
 content_type = "r"
+id = "01K6P3M76N67ADEYKVQK803HM7"
 
 [language]
 name = "r"

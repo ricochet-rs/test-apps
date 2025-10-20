@@ -3,6 +3,7 @@ name = "AmbiAPI"
 entrypoint = "app.R"
 access_type = "external"
 content_type = "ambiorix"
+id = "01K6P3MSV1Y0PC6QNGP8QQ79F4"
 
 [language]
 name = "r"

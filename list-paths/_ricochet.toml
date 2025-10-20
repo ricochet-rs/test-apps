@@ -1,9 +1,8 @@
 [content]
-name = "Hello, Ambiorix!"
-entrypoint = "index.R"
-access_type = "external"
-content_type = "ambiorix"
-id = "01K6P3M77J90TJ1THG615ZPHK2"
+name = "security-audit"
+entrypoint = "app.R"
+access_type = "private"
+content_type = "shiny"
 
 [language]
 name = "r"

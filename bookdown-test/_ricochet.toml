@@ -8,6 +8,7 @@ An online book written in R using the `{bookdown}` package.
 
 This is the template that is provided by the [bookdown book](https://bookdown.org/yihui/bookdown/).
 """
+id = "01K6P3M6N0AAZ1C3VRAKDKHMX3"
 
 [language]
 name = "r"

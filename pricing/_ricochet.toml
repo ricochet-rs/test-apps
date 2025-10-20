@@ -1,10 +1,8 @@
 [content]
-name = "hcde-final-viz"
-entrypoint = "shiny-svi-dashboard.R"
+name = "ricochet pricing"
+entrypoint = "app.R"
 access_type = "external"
 content_type = "shiny"
-include = ["app.R", "data/SVI2022_WASHINGTON_tract.gdb", "renv.lock"]
-id = "01K6P3N09JTECWG0BGHNESJSFF"
 
 [language]
 name = "r"
