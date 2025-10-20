@@ -1,9 +1,0 @@
-[content]
-name = "Long sleep"
-entrypoint = "main.R"
-access_type = "private"
-content_type = "r"
-
-[language]
-name = "r"
-packages = "renv.lock"
