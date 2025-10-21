@@ -1,6 +1,5 @@
 [content]
 name = "waiting"
-entrypoint = "app.R"
 access_type = "internal"
 content_type = "shiny"
 id = "01K6P3M75RX32VNYYN1RX8BK9J"
