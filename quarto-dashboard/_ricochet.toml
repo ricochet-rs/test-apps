@@ -3,7 +3,6 @@ name = "Quarto tesst static"
 entrypoint = "dashboard.qmd"
 access_type = "private"
 content_type = "quarto-r"
-id = "01K6P3M72CDDRAWSMG1TQAJ5RQ"
 
 [language]
 name = "r"

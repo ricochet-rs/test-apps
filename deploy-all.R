@@ -1,28 +1,43 @@
 # source("clean-ricochet-toml-ids.R")
 
 library(ricochet)
+
+Sys.setenv(
+  "RICOCHET_API_KEY" = "rico_em3i5yjpRhD_8CEFMjnRCKkRFpFkJSzt4SxgzjpHehKPm"
+)
+Sys.setenv("RICOCHET_HOST" = "http://localhost:6188")
+
+ricochet::deploy("sleepy")
+
 deploy("bookdown-test")
 deploy("plumb-default")
 
 deploy("quarto-dashboard")
 
-deploy("waiting")
+ricochet::deploy("waiting")
 
-deploy("sleepy")
+
 deploy("ambiorix-hello-world")
 
-deploy("test-apps/quarto-shiny/")
-
-deploy("test-apps/quarto")
+deploy("quarto-shiny")
 
 deploy("dash-jl")
 
-deploy("test-apps/ambiorix-api")
+deploy("ambiorix-api")
 
-deploy(path = "test-apps/srvrless-hello")
+deploy(path = "srvrless-hello")
 
-deploy("test-apps/polls-538")
+ricochet::deploy("polls-538")
 
 deploy("svi-dashboard")
 
 deploy("jl-hello-world")
+
+# python
+library(ricochet)
+
+Sys.setenv(
+  "RICOCHET_API_KEY" = "rico_Lq6QJFKbwq5_EvG6io1354LsyGTC5cH3MuJ8TpTob248T"
+)
+Sys.setenv("RICOCHET_HOST" = "http://localhost:3334")
+deploy("python/sleep")

@@ -1,4 +1,5 @@
 library(shiny)
+
 server <- function(input, output) {
   output$distPlot <- renderPlot({
     # generate bins based on input$bins from ui.R

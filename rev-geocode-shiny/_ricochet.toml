@@ -1,8 +1,8 @@
 [content]
-name = "Hello, Ambiorix!"
-entrypoint = "index.R"
-access_type = "external"
-content_type = "ambiorix"
+name = "reverse geocode"
+entrypoint = "app.R"
+access_type = "internal"
+content_type = "shiny"
 
 [language]
 name = "r"

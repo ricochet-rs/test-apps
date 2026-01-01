@@ -1,7 +1,7 @@
 [content]
-name = "waiting"
-entrypoint = "."
-access_type = "internal"
+name = "hey oliver"
+entrypoint = "app.R"
+access_type = "private"
 content_type = "shiny"
 
 [language]

@@ -6,7 +6,6 @@ slug = "srvrless"
 content_type = "serverless-r"
 tags = ["serverless", "api", "server-fn"]
 summary = "Demo of ricochet's server function runtime for R"
-id = "01K6P3MWRN4MNS05T9GP4MWDC8"
 
 [language]
 name = "r"

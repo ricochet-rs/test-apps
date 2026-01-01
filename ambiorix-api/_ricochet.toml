@@ -1,16 +1,17 @@
 [content]
-name = "AmbiAPI"
+name = "sleeps"
 entrypoint = "app.R"
-access_type = "external"
-content_type = "ambiorix"
-id = "01K6P3MSV1Y0PC6QNGP8QQ79F4"
+access_type = "internal"
+content_type = "r"
 
 [language]
 name = "r"
 packages = "renv.lock"
 
-[serve]
-min_instances = 0
-max_instances = 5
-spawn_threshold = 80
-max_connections = 10
+[schedule]
+cron = "@daily"
+parameterized = false
+
+[static]
+index = "index.html"
+output_dir = "."

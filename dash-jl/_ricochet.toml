@@ -3,7 +3,6 @@ name = "Plotly Dash Demo"
 entrypoint = "app.jl"
 access_type = "external"
 content_type = "julia-service"
-id = "01K6P3MN4HHYF19JKBJAMV2HPE"
 
 [language]
 name = "julia"
