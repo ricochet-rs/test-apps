@@ -1,6 +1,7 @@
 # Serverless runtime for R 
 
-ricochet provides a serverless function runtime for R.
+
+> ricochet provides a serverless function runtime for R.
 
 To use ricochet's serverless function runtime, create an R script that contains function definitions stored in a list object called `routes`.
 
@@ -10,7 +11,7 @@ For example we have a file `hello-world.R`:
 
 <div class="code-with-filename">
 
-**hello-world.R**
+hello-world.R
 
 ``` r
 hello_world <- function() {
@@ -34,6 +35,16 @@ ricochet will create either a `GET` or `POST` endpoint for each route
 specified. If a function has no arguments, a `GET` endpoint is created.
 If one or more arguments are present, a `POST` endpoint is created.
 
+<div class="callout-tip">
+Alternatively routes can be specified as: 
+
+```r
+routes <- list(add2, hello_world)
+```
+
+The name of the function will be the route.
+
+</div>
 
 Once deployed to ricochet, the functions can be accessed via http. 
 

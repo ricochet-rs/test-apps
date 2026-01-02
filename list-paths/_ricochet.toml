@@ -1,8 +1,8 @@
 [content]
-name = "Ambi API"
+name = "security-audit"
 entrypoint = "app.R"
-access_type = "external"
-content_type = "ambiorix"
+access_type = "private"
+content_type = "shiny"
 
 [language]
 name = "r"

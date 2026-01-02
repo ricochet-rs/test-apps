@@ -9,7 +9,7 @@ name = "r"
 packages = "renv.lock"
 
 [serve]
-min_instances = 0.0
-max_instances = 5.0
-spawn_threshold = 80.0
-max_connections = 10.0
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

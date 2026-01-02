@@ -1,7 +1,7 @@
 [content]
-name = "Hi there"
+name = "Waiting App"
 entrypoint = "app.R"
-access_type = "private"
+access_type = "external"
 content_type = "shiny"
 
 [language]

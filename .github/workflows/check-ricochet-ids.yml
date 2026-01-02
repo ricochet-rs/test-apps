@@ -1,0 +1,39 @@
+name: Check Ricochet TOML IDs
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-ids:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check for IDs in _ricochet.toml files
+        run: |
+          echo "Searching for _ricochet.toml files with ID fields..."
+
+          # Find all _ricochet.toml files and check for id fields
+          files_with_ids=()
+
+          while IFS= read -r file; do
+            if grep -q '^[[:space:]]*id[[:space:]]*=' "$file"; then
+              files_with_ids+=("$file")
+              echo "❌ Found ID in: $file"
+              grep -n '^[[:space:]]*id[[:space:]]*=' "$file"
+            fi
+          done < <(find . -name '_ricochet.toml')
+
+          # Exit with error if any files have IDs
+          if [ ${#files_with_ids[@]} -gt 0 ]; then
+            echo ""
+            echo "ERROR: Found ${#files_with_ids[@]} _ricochet.toml file(s) with ID fields."
+            echo "You cannot commit a _ricochet.toml file with an ID set."
+            echo "Please remove the 'id' field from the following files:"
+            printf '%s\n' "${files_with_ids[@]}"
+            exit 1
+          fi
+
+          echo "✅ All _ricochet.toml files are valid (no IDs found)"
