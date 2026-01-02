@@ -1,5 +1,5 @@
 [content]
-name = "sleeeeps"
+name = "Long sleep"
 entrypoint = "main.R"
 access_type = "private"
 content_type = "r"
