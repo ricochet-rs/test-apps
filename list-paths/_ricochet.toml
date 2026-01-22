@@ -1,5 +1,4 @@
 [content]
-id = "01KFKWYKS5V57QD2NANJAS1HZQ"
 name = "security-audit"
 entrypoint = "app.R"
 access_type = "private"

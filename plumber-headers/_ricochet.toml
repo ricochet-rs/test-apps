@@ -1,5 +1,4 @@
 [content]
-id = "01KFKY3ASWJ4HM1H3W8HK4B605"
 name = "list headers"
 entrypoint = "plumber.R"
 access_type = "private"

@@ -1,5 +1,4 @@
 [content]
-id = "01KFKWYJ26R8X0TGB9DFDK1VMV"
 name = "Geocoding App"
 entrypoint = "app.R"
 access_type = "private"

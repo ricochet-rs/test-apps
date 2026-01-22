@@ -1,5 +1,4 @@
 [content]
-id = "01KFKWYR6G1W3527X9NBNYBYFR"
 name = "538 Polls Election 2024"
 entrypoint = "main.R"
 access_type = "private"

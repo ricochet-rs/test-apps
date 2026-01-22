@@ -1,5 +1,4 @@
 [content]
-id = "01KFKWYS3BYSRQXVSHZD7EDKW0"
 name = "ricochet pricing"
 entrypoint = "app.R"
 access_type = "external"

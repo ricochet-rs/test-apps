@@ -1,5 +1,4 @@
 [content]
-id = "01KFKX2XPR32H82J5NM7KPYDSR"
 name = "Waiting App"
 entrypoint = "app.R"
 access_type = "external"

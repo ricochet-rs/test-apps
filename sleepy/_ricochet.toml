@@ -1,5 +1,4 @@
 [content]
-id = "01KFKX2V4V23RFCS14YTYP0899"
 name = "Long sleep"
 entrypoint = "main.R"
 access_type = "private"

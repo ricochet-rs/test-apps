@@ -1,5 +1,4 @@
 [content]
-id = "01KFKWYFFNF1S0TSD06HSC69DZ"
 name = "my bookdown "
 entrypoint = "index.Rmd"
 access_type = "private"

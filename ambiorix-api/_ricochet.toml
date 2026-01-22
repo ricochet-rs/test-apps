@@ -1,5 +1,4 @@
 [content]
-id = "01KFKWYDDJ034938BW2515W12T"
 name = "Ambi API"
 entrypoint = "app.R"
 access_type = "external"

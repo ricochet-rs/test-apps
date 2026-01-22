@@ -1,5 +1,4 @@
 [content]
-id = "01KFKX2VT944Y5VKS8XZ5EABZV"
 name = "serverless R!"
 entrypoint = "hello-world.R"
 access_type = "external"
