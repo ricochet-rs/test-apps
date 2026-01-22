@@ -1,6 +1,6 @@
 [content]
-id = "01KFKWYR6G1W3527X9NBNYBYFR"
-name = "538 Polls Election 2024"
+id = "01KFKX2V4V23RFCS14YTYP0899"
+name = "Long sleep"
 entrypoint = "main.R"
 access_type = "private"
 content_type = "r"

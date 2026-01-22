@@ -1,9 +1,9 @@
 [content]
-id = "01KFKWYKS5V57QD2NANJAS1HZQ"
-name = "security-audit"
-entrypoint = "app.R"
+id = "01KFKY3ASWJ4HM1H3W8HK4B605"
+name = "list headers"
+entrypoint = "plumber.R"
 access_type = "private"
-content_type = "shiny"
+content_type = "plumber"
 
 [language]
 name = "r"

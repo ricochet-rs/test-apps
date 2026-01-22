@@ -1,4 +1,5 @@
 [content]
+id = "01KFKWZ3J9VR3E2HBA3NP6HJ92"
 name = "Quarto tesst static"
 entrypoint = "dashboard.qmd"
 access_type = "private"

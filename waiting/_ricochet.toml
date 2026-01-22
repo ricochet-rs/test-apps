@@ -1,8 +1,10 @@
 [content]
+id = "01KFKX2XPR32H82J5NM7KPYDSR"
 name = "Waiting App"
 entrypoint = "app.R"
 access_type = "external"
 content_type = "shiny"
+exec_env = "r-4.5"
 
 [language]
 name = "r"
@@ -13,3 +15,6 @@ min_instances = 0
 max_instances = 5
 spawn_threshold = 80
 max_connections = 10
+
+[packages]
+r = { CRAN = "https://cran.rpkgs.com/", RSPM = "https://p3m.dev/cran/latest" }

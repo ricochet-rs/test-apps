@@ -1,4 +1,5 @@
 [content]
+id = "01KFKWYE2GJENS4AGZ8R8KT3JC"
 name = "Hello, Ambiorix!"
 entrypoint = "index.R"
 access_type = "external"

@@ -1,4 +1,5 @@
 [content]
+id = "01KFKWYG54XMQ3P8XTD7NPXYMW"
 name = "Plotly Dash Demo"
 entrypoint = "app.jl"
 access_type = "external"

@@ -1,4 +1,5 @@
 [content]
+id = "01KFKWYME62E12Y8DCRXMFJRBR"
 name = "SQLite Persistence"
 tags = ["persistence", "shiny", "demo"]
 summary = "Demonstrating the use of persistent directorys in `ricochet`."

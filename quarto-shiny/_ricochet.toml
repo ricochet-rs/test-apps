@@ -1,4 +1,5 @@
 [content]
+id = "01KFKWZ4CFQXHMST9VF25GDF5X"
 name = "Quarto Shiny App"
 entrypoint = "app.qmd"
 access_type = "private"
