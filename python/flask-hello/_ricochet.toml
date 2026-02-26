@@ -1,5 +1,4 @@
 [content]
-id = "01KJDSS15AS9WKCZX5M1RTDHF6"
 name = "Hello, Flask!"
 entrypoint = "app.py"
 access_type = "external"

@@ -1,5 +1,4 @@
 [content]
-id = "01KJDSS12XZJ85XSDX56Z2TEXS"
 name = "Hello, Quarto Python!"
 entrypoint = "hello.qmd"
 access_type = "external"

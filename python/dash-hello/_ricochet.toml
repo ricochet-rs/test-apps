@@ -1,5 +1,4 @@
 [content]
-id = "01KJDSS1B2VD3S02K9P3FFFQT6"
 name = "Hello, Dash!"
 entrypoint = "app.py"
 access_type = "external"

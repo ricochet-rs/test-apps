@@ -1,5 +1,4 @@
 [content]
-id = "01KJDSS1412REQHTM5SZMPM308"
 name = "Hello, Streamlit!"
 entrypoint = "app.py"
 access_type = "external"

@@ -1,5 +1,4 @@
 [content]
-id = "01KJDSS18YYB4SEAVDFDP9M2X9"
 name = "Hello, FastAPI!"
 entrypoint = "app.py"
 access_type = "external"
