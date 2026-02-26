@@ -1,0 +1,16 @@
+[content]
+id = "01KJDSS15AS9WKCZX5M1RTDHF6"
+name = "Hello, Flask!"
+entrypoint = "app.py"
+access_type = "external"
+content_type = "flask"
+
+[language]
+name = "python"
+packages = "uv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

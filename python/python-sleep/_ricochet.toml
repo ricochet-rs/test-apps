@@ -1,0 +1,10 @@
+[content]
+id = "01KJDSS11QZH3GH7G9W9MD263K"
+name = "Python sleep"
+entrypoint = "main.py"
+access_type = "private"
+content_type = "python"
+
+[language]
+name = "python"
+packages = "uv.lock"
