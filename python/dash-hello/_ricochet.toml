@@ -1,0 +1,15 @@
+[content]
+name = "Hello, Dash!"
+entrypoint = "app.py"
+access_type = "external"
+content_type = "dash"
+
+[language]
+name = "python"
+packages = "uv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

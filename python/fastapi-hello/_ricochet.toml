@@ -1,0 +1,15 @@
+[content]
+name = "Hello, FastAPI!"
+entrypoint = "app.py"
+access_type = "external"
+content_type = "fast-api"
+
+[language]
+name = "python"
+packages = "uv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

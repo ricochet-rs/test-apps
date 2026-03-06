@@ -1,0 +1,9 @@
+[content]
+name = "Hello, Quarto Python!"
+entrypoint = "hello.qmd"
+access_type = "external"
+content_type = "quarto-py"
+
+[language]
+name = "python"
+packages = "uv.lock"
