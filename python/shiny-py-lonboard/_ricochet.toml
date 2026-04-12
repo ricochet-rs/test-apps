@@ -1,0 +1,16 @@
+[content]
+name = "King County House Prices"
+entrypoint = "app.py"
+access_type = "external"
+content_type = "shiny-py"
+summary = "Use lonboard and shiny for python to explore housing prices in King county."
+
+[language]
+name = "python"
+packages = "uv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10
