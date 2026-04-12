@@ -1,7 +1,7 @@
 [project]
-name = "shiny-py-example"
+name = "shiny-py-lonboard"
 version = "0.1.0"
-description = "Demo using lonboard with shiny-py"
+description = "Shiny for python with lonboard"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
