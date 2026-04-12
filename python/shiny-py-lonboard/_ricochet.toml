@@ -1,5 +1,4 @@
 [content]
-id = "01KP1C737C3PC2H76S02DQVYR6"
 name = "King County House Prices"
 entrypoint = "app.py"
 access_type = "external"
