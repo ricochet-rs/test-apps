@@ -1010,7 +1010,7 @@ wheels = [
 ]
 
 [[package]]
-name = "shiny-py-example"
+name = "shiny-py-lonboard"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
