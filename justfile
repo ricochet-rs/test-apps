@@ -1,5 +1,5 @@
-clear:
-  R --slave -f clean-ricochet-toml-ids.R
+clean-ids:
+  Rscript clean-ricochet-toml-ids.R
 
 deploy-all server='':
   #!/usr/bin/env bash
