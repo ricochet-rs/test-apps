@@ -1,0 +1,12 @@
+[content]
+name = "rmd-test"
+entrypoint = "index.Rmd"
+access_type = "internal"
+content_type = "rmd"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[static]
+index = "index.html"

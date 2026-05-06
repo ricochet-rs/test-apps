@@ -3,7 +3,6 @@ name = "Waiting App"
 entrypoint = "app.R"
 access_type = "external"
 content_type = "shiny"
-exec_env = "r-4.5"
 
 [language]
 name = "r"

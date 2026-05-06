@@ -2,3 +2,5 @@
 .Rprofile
 renv/
 .Renviron
+rv/
+venv/
