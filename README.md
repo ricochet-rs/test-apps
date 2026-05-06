@@ -2,6 +2,12 @@
 
 This repository contains applications, scripts, and documents that can be used to test deployments to ricochet.
 
+## Organization:
+
+- `r/`: R-based content items
+- `python/` Python-based content items
+- `jl/` Julia-based content items
+
 ## Development
 
 Use `just deploy-all` to deploy all applications to your ricochet server. 
