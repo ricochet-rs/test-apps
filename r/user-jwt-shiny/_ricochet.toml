@@ -1,0 +1,16 @@
+[content]
+id = "01KWMTGGKG2B2FXP5S314V0J97"
+name = "user-jwt-shiny"
+entrypoint = "app.R"
+access_type = "internal"
+content_type = "shiny"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10
