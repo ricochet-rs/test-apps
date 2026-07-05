@@ -1,0 +1,10 @@
+[project]
+name = "user-jwt-shiny"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pyjwt[crypto]>=2.10.1",
+    "shiny>=1.6.3",
+]

@@ -1,0 +1,17 @@
+[content]
+id = "01KWT6X6NBMNR9RE5BGKBMYJHE"
+name = "user-jwt-shiny-py"
+entrypoint = "app.py"
+access_type = "internal"
+content_type = "shiny-py"
+exclude = ["__pycache__"]
+
+[language]
+name = "python"
+packages = "uv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10
