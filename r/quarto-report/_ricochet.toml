@@ -1,0 +1,10 @@
+[content]
+id = "01KXV49FQRR927TQWM10D9CSNZ"
+name = "Report Integration"
+entrypoint = "report.qmd"
+access_type = "external"
+content_type = "quarto-r"
+
+[language]
+name = "r"
+packages = "renv.lock"

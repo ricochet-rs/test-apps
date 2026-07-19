@@ -1,0 +1,14 @@
+---
+title: "Quarto Report with R"
+author: "ricochet integrations"
+---
+
+## BMI vs Bill length by Sex
+```{r}
+plot(
+  bill_len ~ body_mass,
+  data = penguins, 
+  col = penguins$sex,
+  pch = 19
+)
+```
