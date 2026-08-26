@@ -90,6 +90,18 @@ DISPLAY_LABELS = {
 
 ui.page_opts(title="King County Housing", fillable=True)
 
+# lonboard 0.16.0 renders its bbox-select toolbar unconditionally; no Map trait disables it.
+# The toolbar sets display:flex inline, so overriding it requires !important.
+ui.head_content(
+    ui.tags.style("""
+    .lonboard div:has(> [role="group"] > button[aria-label="Select BBox"]),
+    .lonboard div:has(> [role="group"] > button[aria-label="Cancel drawing"]),
+    .lonboard div:has(> [role="group"] > button[aria-label="Clear bounding box"]) {
+      display: none !important;
+    }
+    """)
+)
+
 with ui.sidebar(width=300):
     ui.h5("Filters")
 
@@ -214,4 +226,5 @@ with ui.card(full_screen=True):
                         "zoom": 9,
                     },
                     show_side_panel=False,
+                    controls=[],
                 )
