@@ -11,47 +11,109 @@
   "Packages": {
     "R6": {
       "Package": "R6",
-      "Version": "2.5.1",
+      "Version": "2.6.1",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R"
+      "Priority": null,
+      "Depends": [
+        "R (>= 3.6)"
       ],
-      "Hash": "470851b6d5d0ac559e9d01bb352b4021"
+      "Imports": [
+        null
+      ],
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "lobstr",
+        "testthat (>= 3.0.0)"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "no",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "Rcpp": {
       "Package": "Rcpp",
-      "Version": "1.0.13",
+      "Version": "1.1.2",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
+      "Priority": null,
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "Imports": [
         "methods",
         "utils"
       ],
-      "Hash": "f27411eb6d9c3dada5edd444b8416675"
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "tinytest",
+        "inline",
+        "rbenchmark",
+        "pkgKitten (>= 0.1.2)"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "GPL (>= 2)",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "ambiorix": {
       "Package": "ambiorix",
-      "Version": "2.1.1",
+      "Version": "3.1.0",
       "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "ambiorix",
-      "RemoteUsername": "ambiorix-web",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "a6f5089bc7a976fbe917c7bdf4dcecf48b23678f",
-      "Requirements": [
-        "R",
-        "assertthat",
+      "Title": "Web Framework Inspired by 'Express.js'",
+      "Authors@R": "c( person(given = \"John\", family = \"Coene\", role = \"aut\", email = \"jcoenep@gmail.com\", comment = c(ORCID = \"0000-0002-6637-4107\")), person(family = \"Opifex\", role = c(\"fnd\")), person(given = \"Kennedy\", family = \"Mwavu\", role = \"cre\", email = \"mwavukennedy@gmail.com\", comment = c(ORCID = \"0009-0006-3157-7234\")), person(given = \"Julio\", family = \"Collazos\", role = \"ctb\", comment = c(ORCID = \"0009-0006-5503-0997\")), person(family = \"SmartBear Software\", role = c(\"ctb\", \"cph\"), comment = \"swagger-ui assets in inst/swagger-ui/\") )",
+      "Description": "A web framework inspired by 'express.js' to build any web service from multi-page websites to 'RESTful'  application programming interfaces.",
+      "License": "GPL (>= 3)",
+      "Encoding": "UTF-8",
+      "LazyData": "false",
+      "Roxygen": "list(markdown = TRUE)",
+      "Imports": [
+        "log",
         "cli",
-        "fs",
         "glue",
         "httpuv",
-        "jsonlite",
-        "log",
-        "methods"
+        "methods",
+        "assertthat",
+        "webutils (>= 1.2.0)",
+        "yyjsonr (>= 0.1.20)",
+        "mime (>= 0.13)",
+        "promises (>= 1.5.0)"
       ],
-      "Hash": "c84fe88ebb5369bb878ff0189b6d888b"
+      "Suggests": [
+        "readr",
+        "readxl",
+        "ggplot2",
+        "jsonlite",
+        "websocket",
+        "htmltools",
+        "commonmark",
+        "htmlwidgets",
+        "testthat (>= 3.0.0)"
+      ],
+      "URL": "https://github.com/ambiorix-web/ambiorix, https://ambiorix.dev",
+      "BugReports": "https://github.com/ambiorix-web/ambiorix/issues",
+      "Config/testthat/edition": "3",
+      "Config/roxygen2/version": "8.0.0",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ambiorix-web",
+      "RemoteRepo": "ambiorix",
+      "RemoteRef": "master",
+      "RemoteSha": "36a90a122fe63899b7934f4cc4d231b4a719d512"
     },
     "assertthat": {
       "Package": "assertthat",
@@ -65,14 +127,50 @@
     },
     "cli": {
       "Package": "cli",
-      "Version": "3.6.2",
+      "Version": "3.6.6",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
+      "Priority": null,
+      "Depends": [
+        "R (>= 3.4)"
+      ],
+      "Imports": [
         "utils"
       ],
-      "Hash": "1216ac65ac55ec0058a6f75d7ca0fd52"
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "callr",
+        "covr",
+        "crayon",
+        "digest",
+        "glue (>= 1.6.0)",
+        "grDevices",
+        "htmltools",
+        "htmlwidgets",
+        "knitr",
+        "methods",
+        "processx",
+        "ps (>=\n1.3.4.9000)",
+        "rlang (>= 1.0.2.9003)",
+        "rmarkdown",
+        "rprojroot",
+        "rstudioapi",
+        "testthat (>= 3.2.0)",
+        "tibble",
+        "whoami",
+        "withr"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "crayon": {
       "Package": "crayon",
@@ -95,61 +193,182 @@
     },
     "fs": {
       "Package": "fs",
-      "Version": "1.6.4",
+      "Version": "2.1.0",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
+      "Priority": null,
+      "Depends": [
+        "R (>= 4.1)"
+      ],
+      "Imports": [
         "methods"
       ],
-      "Hash": "15aeb8c27f5ea5161f9f6a641fafd93a"
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "covr",
+        "crayon",
+        "knitr",
+        "pillar (>= 1.0.0)",
+        "rmarkdown",
+        "spelling",
+        "testthat (>= 3.0.0)",
+        "tibble (>= 1.1.0)",
+        "vctrs (>= 0.3.0)",
+        "withr"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "glue": {
       "Package": "glue",
-      "Version": "1.7.0",
+      "Version": "1.8.1",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
+      "Priority": null,
+      "Depends": [
+        "R (>= 4.1)"
+      ],
+      "Imports": [
         "methods"
       ],
-      "Hash": "e0b3a53876554bd45879e596cdb10a52"
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "crayon",
+        "DBI (>= 1.2.0)",
+        "dplyr",
+        "knitr",
+        "rlang",
+        "rmarkdown",
+        "RSQLite",
+        "testthat (>= 3.2.0)",
+        "vctrs (>= 0.3.0)",
+        "waldo (>=\n0.5.3)",
+        "withr"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "httpuv": {
       "Package": "httpuv",
-      "Version": "1.6.15",
+      "Version": "1.6.17",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "R6",
-        "Rcpp",
-        "later",
+      "Priority": null,
+      "Depends": [
+        "R (>= 2.15.1)"
+      ],
+      "Imports": [
+        "later (>= 0.8.0)",
         "promises",
+        "R6",
+        "Rcpp (>= 1.0.7)",
         "utils"
       ],
-      "Hash": "d55aa087c47a63ead0f6fc10f8fa1ee0"
+      "LinkingTo": [
+        "later",
+        "Rcpp"
+      ],
+      "Suggests": [
+        "callr",
+        "curl",
+        "jsonlite",
+        "testthat (>= 3.0.0)",
+        "websocket"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "GPL (>= 2) | file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "jsonlite": {
       "Package": "jsonlite",
-      "Version": "1.8.8",
+      "Version": "2.0.0",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
+      "Priority": null,
+      "Depends": [
         "methods"
       ],
-      "Hash": "e1b9c55281c5adc4dd113652d9e26768"
+      "Imports": [
+        null
+      ],
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "httr",
+        "vctrs",
+        "testthat",
+        "knitr",
+        "rmarkdown",
+        "R.rsp",
+        "sf"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "later": {
       "Package": "later",
-      "Version": "1.3.2",
+      "Version": "1.4.8",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "Rcpp",
+      "Priority": null,
+      "Depends": [
+        "R (>= 3.5)"
+      ],
+      "Imports": [
+        "Rcpp (>= 1.0.10)",
         "rlang"
       ],
-      "Hash": "a3e051d405326b8b0012377434c62b37"
+      "LinkingTo": [
+        "Rcpp"
+      ],
+      "Suggests": [
+        "knitr",
+        "nanonext",
+        "promises",
+        "rmarkdown",
+        "testthat (>= 3.0.0)"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "log": {
       "Package": "log",
@@ -165,50 +384,177 @@
     },
     "magrittr": {
       "Package": "magrittr",
-      "Version": "2.0.3",
+      "Version": "2.0.5",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R"
+      "Priority": null,
+      "Depends": [
+        "R (>= 3.4.0)"
       ],
-      "Hash": "7ce2733a9826b3aeb1775d56fd305472"
+      "Imports": [
+        null
+      ],
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "covr",
+        "knitr",
+        "rlang",
+        "rmarkdown",
+        "testthat"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "promises": {
       "Package": "promises",
-      "Version": "1.3.0",
+      "Version": "1.5.0",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R6",
-        "Rcpp",
-        "fastmap",
-        "later",
-        "magrittr",
-        "rlang",
-        "stats"
+      "Priority": null,
+      "Depends": [
+        "R (>= 4.1.0)"
       ],
-      "Hash": "434cd5388a3979e74be5c219bcd6e77d"
+      "Imports": [
+        "fastmap (>= 1.1.0)",
+        "later",
+        "lifecycle",
+        "magrittr (>= 1.5)",
+        "otel\n(>= 0.2.0)",
+        "R6",
+        "rlang"
+      ],
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "future (>= 1.21.0)",
+        "knitr",
+        "mirai",
+        "otelsdk (>= 0.2.0)",
+        "purrr",
+        "Rcpp",
+        "rmarkdown",
+        "spelling",
+        "testthat (>= 3.0.0)",
+        "vembedr"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "no",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.7",
+      "Version": "1.2.4",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
+      "Priority": null,
+      "Depends": [
+        null
+      ],
+      "Imports": [
         "utils"
       ],
-      "Hash": "397b7b2a265bc5a7a06852524dabae20"
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "BiocManager",
+        "cli",
+        "compiler",
+        "covr",
+        "cpp11",
+        "curl",
+        "devtools",
+        "generics",
+        "gitcreds",
+        "jsonlite",
+        "jsonvalidate",
+        "knitr",
+        "miniUI",
+        "modules",
+        "packrat",
+        "pak",
+        "R6",
+        "remotes",
+        "reticulate",
+        "rmarkdown",
+        "rstudioapi",
+        "shiny",
+        "testthat",
+        "uuid",
+        "waldo",
+        "yaml",
+        "webfakes"
+      ],
+      "Enhances": [
+        null
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "no",
+      "Repository": "CRAN",
+      "Type": "source"
     },
     "rlang": {
       "Package": "rlang",
-      "Version": "1.1.3",
+      "Version": "1.3.0",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
+      "Priority": null,
+      "Depends": [
+        "R (>= 4.0.0)"
+      ],
+      "Imports": [
         "utils"
       ],
-      "Hash": "42548638fae05fd9a9b5f3f437fbbbe2"
+      "LinkingTo": [
+        null
+      ],
+      "Suggests": [
+        "cli (>= 3.1.0)",
+        "covr",
+        "crayon",
+        "desc",
+        "fs",
+        "glue",
+        "knitr",
+        "magrittr",
+        "methods",
+        "pillar",
+        "pkgload",
+        "rmarkdown",
+        "stats",
+        "testthat\n(>= 3.3.2)",
+        "tibble",
+        "usethis",
+        "vctrs (>= 0.2.3)",
+        "withr"
+      ],
+      "Enhances": [
+        "winch"
+      ],
+      "License": "MIT + file LICENSE",
+      "License_is_FOSS": null,
+      "License_restricts_use": null,
+      "OS_type": null,
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN",
+      "Type": "source"
     }
   }
 }

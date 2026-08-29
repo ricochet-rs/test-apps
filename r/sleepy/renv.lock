@@ -11,7 +11,7 @@
   "Packages": {
     "renv": {
       "Package": "renv",
-      "Version": "1.2.2.9000",
+      "Version": "1.2.4",
       "Source": "Repository",
       "Priority": null,
       "Depends": [
