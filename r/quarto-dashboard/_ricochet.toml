@@ -8,5 +8,8 @@ content_type = "quarto-r"
 name = "r"
 packages = "renv.lock"
 
+[packages]
+r = { CRAN = "https://cran.rpkgs.com/" }
+
 [static]
 index = "dashboard.html"

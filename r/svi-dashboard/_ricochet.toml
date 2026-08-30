@@ -9,6 +9,9 @@ include = ["app.R", "data/SVI2022_WASHINGTON_tract.gdb", "renv.lock"]
 name = "r"
 packages = "renv.lock"
 
+[packages]
+r = { CRAN = "https://cran.rpkgs.com/" }
+
 [serve]
 min_instances = 0
 max_instances = 5
