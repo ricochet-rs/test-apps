@@ -8,6 +8,9 @@ content_type = "rmd"
 name = "r"
 packages = "renv.lock"
 
+[packages]
+r = { CRAN = "https://cran.rpkgs.com/" }
+
 [schedule]
 cron = "@daily"
 parameterized = false

@@ -16,4 +16,4 @@ spawn_threshold = 80
 max_connections = 10
 
 [packages]
-r = { CRAN = "https://cran.rpkgs.com/", RSPM = "https://p3m.dev/cran/latest" }
+r = { CRAN = "https://cran.rpkgs.com/" }

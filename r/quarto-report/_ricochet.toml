@@ -8,3 +8,6 @@ content_type = "quarto-r"
 [language]
 name = "r"
 packages = "renv.lock"
+
+[packages]
+r = { CRAN = "https://cran.rpkgs.com/" }
