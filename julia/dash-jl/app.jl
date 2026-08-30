@@ -11,8 +11,12 @@ function powplot(n)
     p.plot
 end
 
-app =
-    dash(external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"])
+base_path = rstrip(get(ENV, "BASEPATH", "/"), '/') * "/"
+
+app = dash(
+    external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"],
+    requests_pathname_prefix = base_path,
+)
 
 app.layout = html_div(style = Dict(:width => "50%")) do
     html_h1("Hello Dash"),
