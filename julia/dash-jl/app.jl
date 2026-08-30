@@ -34,4 +34,4 @@ callback!(app, Output("power", "figure"), Input("slider", "value")) do value
     powplot(value)
 end
 
-run_server(app)
+run_server(app, "0.0.0.0", parse(Int, ENV["PORT"]))
