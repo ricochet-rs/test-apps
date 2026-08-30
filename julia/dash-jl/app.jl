@@ -11,8 +11,12 @@ function powplot(n)
     p.plot
 end
 
-app =
-    dash(external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"])
+base_path = rstrip(get(ENV, "BASEPATH", "/"), '/') * "/"
+
+app = dash(
+    external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"],
+    requests_pathname_prefix = base_path,
+)
 
 app.layout = html_div(style = Dict(:width => "50%")) do
     html_h1("Hello Dash"),
@@ -34,4 +38,4 @@ callback!(app, Output("power", "figure"), Input("slider", "value")) do value
     powplot(value)
 end
 
-run_server(app)
+run_server(app, "0.0.0.0", parse(Int, ENV["PORT"]))
