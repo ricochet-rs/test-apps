@@ -1,0 +1,14 @@
+[content]
+id = "01M14J6R9YW9YK7JJ1GCJY1V2A"
+name = "Quato Julia"
+entrypoint = "index.qmd"
+access_type = "external"
+content_type = "quarto-jl"
+
+[language]
+name = "julia"
+packages = "Manifest.toml"
+
+[static]
+index = "index.html"
+output_dir = "."

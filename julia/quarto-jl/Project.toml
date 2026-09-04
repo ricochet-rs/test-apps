@@ -1,0 +1,5 @@
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+PalmerPenguins = "8b842266-38fa-440a-9b57-31493939ab85"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+TidierPlots = "337ecbd1-5042-4e2a-ae6f-ca776f97570a"
