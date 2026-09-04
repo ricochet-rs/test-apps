@@ -1,0 +1,105 @@
+┌ Error: 2026-09-04 10:18:11 UndefVarError(:PLUGINS_WITH_ASSETS, 0x0000000000009796, Main)
+└ @ Main /Users/josi/.julia/packages/GenieFramework/QspSh/src/GenieFramework.jl:81
+┌ Info: 2026-09-04 10:18:13 Web Sockets available at 127.0.0.1:8000 (via HTTP upgrade) 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Info: 2026-09-04 10:18:13 Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Warning: 2026-09-04 10:18:19 
+│             No secret token is defined through `Genie.Secrets.secret_token!("token")`. Such a token
+│             is needed to hash and to encrypt/decrypt sensitive data in Genie, including cookie
+│             and session data.
+│ 
+│             If your app relies on cookies or sessions make sure you generate a valid token,
+│             otherwise the encrypted data will become unreadable between app restarts.
+│ 
+│             You can resolve this issue by generating a valid `config/secrets.jl` file with a
+│             random token, calling `Genie.Generator.write_secrets_file()`.
+│             
+└ @ Genie.Secrets /Users/josi/.julia/packages/Genie/KnxW5/src/Secrets.jl:27
+┌ Info: 2026-09-04 10:18:47 toggle_todo called
+│   __model__.toggle_todo[] = 2
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:95
+┌ Info: 2026-09-04 10:18:47 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", false), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:18:48 toggle_todo called
+│   __model__.toggle_todo[] = 4
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:95
+┌ Info: 2026-09-04 10:18:48 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", false), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", true), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:18:50 toggle_todo called
+│   __model__.toggle_todo[] = 3
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:95
+┌ Info: 2026-09-04 10:18:50 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", false), Todo(3, "Add GenieFramework and Stipple to Project.toml", false), Todo(4, "Write an _ricochet.toml for this app", true), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:18:51 toggle_todo called
+│   __model__.toggle_todo[] = 5
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:95
+┌ Info: 2026-09-04 10:18:51 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", false), Todo(3, "Add GenieFramework and Stipple to Project.toml", false), Todo(4, "Write an _ricochet.toml for this app", true), Todo(5, "Add a dark mode toggle", true), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:18:51 toggle_todo called
+│   __model__.toggle_todo[] = 5
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:95
+┌ Info: 2026-09-04 10:18:51 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", false), Todo(3, "Add GenieFramework and Stipple to Project.toml", false), Todo(4, "Write an _ricochet.toml for this app", true), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:18:52 toggle_todo called
+│   __model__.toggle_todo[] = 6
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:95
+┌ Info: 2026-09-04 10:18:52 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", false), Todo(3, "Add GenieFramework and Stipple to Project.toml", false), Todo(4, "Write an _ricochet.toml for this app", true), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", true)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:18:53 filter changed
+│   __model__.filter[] = completed
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:18:54 filter changed
+│   __model__.filter[] = active
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:18:55 clear_completed called
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:120
+┌ Info: 2026-09-04 10:18:55 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", false), Todo(3, "Add GenieFramework and Stipple to Project.toml", false), Todo(5, "Add a dark mode toggle", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:18:55 filter changed
+│   __model__.filter[] = all
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:18:56 toggle_todo called
+│   __model__.toggle_todo[] = 3
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:95
+┌ Info: 2026-09-04 10:18:56 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", false), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(5, "Add a dark mode toggle", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:18:57 delete_todo called
+│   __model__.delete_todo[] = 3
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:110
+┌ Info: 2026-09-04 10:18:57 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", false), Todo(5, "Add a dark mode toggle", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:18:58 delete_todo called
+│   __model__.delete_todo[] = 4
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:110
+┌ Error: 2026-09-04 10:22:14 UndefVarError(:PLUGINS_WITH_ASSETS, 0x0000000000009796, Main)
+└ @ Main /Users/josi/.julia/packages/GenieFramework/QspSh/src/GenieFramework.jl:81
+┌ Info: 2026-09-04 10:22:17 Web Sockets available at 127.0.0.1:8000 (via HTTP upgrade) 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Info: 2026-09-04 10:22:17 Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Warning: 2026-09-04 10:22:19 
+│             No secret token is defined through `Genie.Secrets.secret_token!("token")`. Such a token
+│             is needed to hash and to encrypt/decrypt sensitive data in Genie, including cookie
+│             and session data.
+│ 
+│             If your app relies on cookies or sessions make sure you generate a valid token,
+│             otherwise the encrypted data will become unreadable between app restarts.
+│ 
+│             You can resolve this issue by generating a valid `config/secrets.jl` file with a
+│             random token, calling `Genie.Generator.write_secrets_file()`.
+│             
+└ @ Genie.Secrets /Users/josi/.julia/packages/Genie/KnxW5/src/Secrets.jl:27
+┌ Info: 2026-09-04 10:22:28 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Info: 2026-09-04 10:24:49 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562

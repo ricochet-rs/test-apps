@@ -1,0 +1,16 @@
+[content]
+id = "01M1PPXFKN6W3X2WWPSM8X3DRS"
+name = "Genie.jl TODO tracker"
+entrypoint = "app.jl"
+access_type = "external"
+content_type = "julia-service"
+
+[language]
+name = "julia"
+packages = "Manifest.toml"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

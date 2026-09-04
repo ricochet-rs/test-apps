@@ -1,0 +1,274 @@
+┌ Info: 2026-09-04 10:07:46 Watching ["/Users/josi/github/rust/rico-root/test-apps/julia/genie-simple"]
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:19
+┌ Info: 2026-09-04 10:07:46 Web Sockets available at 127.0.0.1:8000 (via HTTP upgrade) 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Info: 2026-09-04 10:07:46 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:07:46 Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Warning: 2026-09-04 10:07:58 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:08:01 filter changed
+│   __model__.filter[] = active
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:38
+┌ Info: 2026-09-04 10:08:02 processing new todo
+│   __model__.new_todo[] = new things
+│   __model__.process_new_todo[] = true
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:58
+┌ Info: 2026-09-04 10:08:04 filter changed
+│   __model__.filter[] = all
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:38
+┌ Info: 2026-09-04 10:08:05 processing new todo
+│   __model__.new_todo[] = new things
+│   __model__.process_new_todo[] = false
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:58
+┌ Info: 2026-09-04 10:08:05 processing new todo
+│   __model__.new_todo[] = new things
+│   __model__.process_new_todo[] = true
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:58
+┌ Info: 2026-09-04 10:08:09 processing new todo
+│   __model__.new_todo[] = add
+│   __model__.process_new_todo[] = false
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:58
+┌ Info: 2026-09-04 10:08:10 processing new todo
+│   __model__.new_todo[] = add
+│   __model__.process_new_todo[] = true
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:58
+┌ Info: 2026-09-04 10:08:10 processing new todo
+│   __model__.new_todo[] = add
+│   __model__.process_new_todo[] = false
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:58
+┌ Info: 2026-09-04 10:08:12 clear_completed called
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:102
+┌ Info: 2026-09-04 10:08:12 todos changed
+│   __model__.todos[] = Todo[]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:29
+┌ Info: 2026-09-04 10:08:13 filter changed
+│   __model__.filter[] = completed
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:38
+┌ Info: 2026-09-04 10:08:13 filter changed
+│   __model__.filter[] = active
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:38
+┌ Info: 2026-09-04 10:08:15 processing new todo
+│   __model__.new_todo[] = dhfsdhf
+│   __model__.process_new_todo[] = true
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:58
+┌ Info: 2026-09-04 10:08:58 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Info: 2026-09-04 10:09:13 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:09:17 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:09:24 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:11:47 Watching ["/Users/josi/github/rust/rico-root/test-apps/julia/genie-simple"]
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:19
+┌ Info: 2026-09-04 10:11:47 Web Sockets available at 127.0.0.1:8000 (via HTTP upgrade) 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Info: 2026-09-04 10:11:48 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:11:48 Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Warning: 2026-09-04 10:11:58 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:12:00 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:12:18 filter changed
+│   __model__.filter[] = active
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:12:18 filter changed
+│   __model__.filter[] = completed
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:12:18 filter changed
+│   __model__.filter[] = all
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:12:19 filter changed
+│   __model__.filter[] = completed
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:12:20 filter changed
+│   __model__.filter[] = active
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:12:28 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:12:28 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:12:28 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:45
+┌ Info: 2026-09-04 10:12:36 filter changed
+│   __model__.filter[] = completed
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:12:36 filter changed
+│   __model__.filter[] = all
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:12:37 filter changed
+│   __model__.filter[] = active
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:12:37 filter changed
+│   __model__.filter[] = all
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:54
+┌ Info: 2026-09-04 10:13:01 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Info: 2026-09-04 10:13:29 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:13:58 Watching ["/Users/josi/github/rust/rico-root/test-apps/julia/genie-simple"]
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:19
+┌ Info: 2026-09-04 10:13:59 Web Sockets available at 127.0.0.1:8000 (via HTTP upgrade) 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Info: 2026-09-04 10:13:59 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:13:59 Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Warning: 2026-09-04 10:14:07 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:14:08 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:14:09 filter changed
+│   __model__.filter[] = active
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:56
+┌ Info: 2026-09-04 10:14:10 filter changed
+│   __model__.filter[] = all
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:56
+┌ Info: 2026-09-04 10:14:55 filter changed
+│   __model__.filter[] = completed
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:56
+┌ Info: 2026-09-04 10:14:56 clear_completed called
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:122
+┌ Info: 2026-09-04 10:14:56 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:14:56 filter changed
+│   __model__.filter[] = active
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:56
+┌ Info: 2026-09-04 10:14:57 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:14:57 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:14:57 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:15:33 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:15:33 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:15:33 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:15:33 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:15:37 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:15:37 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:15:38 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:15:38 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:15:40 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:15:40 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:15:40 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:15:55 Watching ["/Users/josi/github/rust/rico-root/test-apps/julia/genie-simple"]
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:19
+┌ Info: 2026-09-04 10:15:56 Web Sockets available at 127.0.0.1:8000 (via HTTP upgrade) 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Info: 2026-09-04 10:15:56 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:15:56 Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /Users/josi/.julia/packages/Genie/KnxW5/src/Server.jl:206
+┌ Warning: 2026-09-04 10:16:11 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:16:13 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:16:18 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:16:18 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:16:18 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:16:38 Autoreloading
+└ @ GenieAutoReload /Users/josi/.julia/packages/GenieAutoReload/TIvhf/src/GenieAutoReload.jl:22
+┌ Info: 2026-09-04 10:16:38 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:16:38 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:16:38 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:16:53 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:16:54 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:16:54 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:16:55 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:16:55 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:16:55 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:16:59 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:16:59 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:16:59 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:17:01 filter changed
+│   __model__.filter[] = completed
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:56
+┌ Info: 2026-09-04 10:17:01 filter changed
+│   __model__.filter[] = active
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:56
+┌ Info: 2026-09-04 10:17:02 clear_completed called
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:125
+┌ Info: 2026-09-04 10:17:02 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
+┌ Info: 2026-09-04 10:17:03 Calling finalizers
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/Stipple.jl:562
+┌ Warning: 2026-09-04 10:17:03 You are using the old way of defining `js_computed()` for your app, which will be discontinued in the future.
+│ Please define `js_computed(::Type{<:GenieTodo})` instead of `js_computed(::GenieTodo)`.
+│ The Reactive API `@computed js"""<js code>"""` will continue to work as before.
+└ @ Stipple /Users/josi/.julia/packages/Stipple/JR1B2/src/stipple/jsmethods.jl:12
+┌ Info: 2026-09-04 10:17:03 todos changed
+│   __model__.todos[] = Todo[Todo(1, "Deploy this app to ricochet.rs", false), Todo(2, "Serve on the RICOCHET_PORT env var", true), Todo(3, "Add GenieFramework and Stipple to Project.toml", true), Todo(4, "Write an _ricochet.toml for this app", false), Todo(5, "Add a dark mode toggle", false), Todo(6, "Convince someone at work that Julia is fast", false)]
+└ @ Main /Users/josi/github/rust/rico-root/test-apps/julia/genie-simple/app.jl:47
