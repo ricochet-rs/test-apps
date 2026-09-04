@@ -1,0 +1,16 @@
+[content]
+id = "01M1Q21G705Y0Z1NWSF0DQXEXA"
+name = "HTTP.jl hello, world!"
+entrypoint = "app.jl"
+access_type = "external"
+content_type = "julia-service"
+
+[language]
+name = "julia"
+packages = "Manifest.toml"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10
