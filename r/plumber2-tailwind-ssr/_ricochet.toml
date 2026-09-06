@@ -1,0 +1,12 @@
+[content]
+name = "Waiting App"
+entrypoint = "app.R"
+access_type = "external"
+content_type = "r-server"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[packages]
+r = { CRAN = "https://cran.rpkgs.com/" }
