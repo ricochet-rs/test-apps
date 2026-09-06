@@ -1,25 +1,11 @@
-#!/usr/bin/env Rscript
-
-# A server-side-rendered site built with plumber2.
-# Every route returns a full HTML document assembled in R. Tailwind's browser
-# build (from the CDN) handles layout and spacing utilities; a plain <style>
-# block carries the Ricochet theme (dark palette, square corners, sentence-case
-# labels) lifted from ricochet-ui/style/theme.css.
-#
-# Run locally with:  Rscript app.R
-# then open http://127.0.0.1:8080
-
 library(plumber2)
 library(htmltools)
 
-# Tailwind CSS v4 browser build. Compiles utility classes in the client for a
-# demo; a real deployment would ship a prebuilt stylesheet.
+
 tailwind_cdn <- "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
 
-# Ricochet theme, dark mode. Token values are the `.dark` block from
-# ricochet-ui/style/theme.css. Kept as ordinary CSS (not a `text/tailwindcss`
-# block) so the browser build cannot swallow it, and applied through small
-# semantic classes rather than Tailwind color utilities.
+
+# some select theming directly from ricochet
 ricochet_theme <- HTML(
   "
   :root {
@@ -85,7 +71,7 @@ page_template <- '<!DOCTYPE html>
 '
 
 # create a page
-page <- function(title, ...) {
+page <- function(title, ..., root = "./") {
   doc <- htmlTemplate(
     text_ = page_template,
     title = title,
@@ -96,7 +82,7 @@ page <- function(title, ...) {
         tags$header(
           class = "mb-10",
           tags$a(
-            href = "/",
+            href = root,
             class = "rico-link text-sm font-medium",
             HTML("&larr; home")
           )
@@ -109,10 +95,10 @@ page <- function(title, ...) {
   as.character(doc)
 }
 
-pill <- function(name) {
+pill <- function(name, root) {
   tags$li(
     tags$a(
-      href = paste0("/species/", name),
+      href = paste0(root, "species/", name),
       class = "rico-pill px-4 py-1.5 text-sm font-medium",
       name
     )
@@ -120,8 +106,10 @@ pill <- function(name) {
 }
 
 home <- function() {
+  root <- "./"
   page(
     "Hello from ricochet",
+    root = root,
     tags$h1(
       class = "text-4xl font-bold tracking-tight",
       "Hello from ",
@@ -159,7 +147,7 @@ home <- function() {
       ),
       tags$ul(
         class = "mt-4 flex flex-wrap gap-2",
-        lapply(species_levels, pill)
+        lapply(species_levels, pill, root = root)
       )
     )
   )
@@ -173,14 +161,16 @@ stat_card <- function(label, value) {
   )
 }
 
-# Per-species summary of the penguins dataset. Wired to /species/<species> below.
+# generates a single page for species
 species_page <- function(species, response) {
+  root <- "../"
   match_name <- species_levels[tolower(species_levels) == tolower(species)]
 
   if (length(match_name) == 0) {
     response$status <- 404L
     return(page(
       paste0("Unknown species: ", species),
+      root = root,
       tags$h1(class = "text-3xl font-bold tracking-tight", "No such species"),
       tags$p(
         class = "mt-4 rico-muted",
@@ -189,7 +179,7 @@ species_page <- function(species, response) {
       ),
       tags$ul(
         class = "mt-4 flex flex-wrap gap-2",
-        lapply(species_levels, pill)
+        lapply(species_levels, pill, root = root)
       )
     ))
   }
@@ -216,6 +206,7 @@ species_page <- function(species, response) {
 
   page(
     paste0(match_name, " penguins"),
+    root = root,
     tags$h1(
       class = "text-3xl font-bold tracking-tight",
       paste0(match_name, " penguins")
