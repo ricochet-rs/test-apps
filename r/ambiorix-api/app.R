@@ -10,6 +10,17 @@ members <- data.frame(
 
 app <- ambiorix::Ambiorix$new()
 
+app$get("/", \(req, res) {
+  res$json(list(
+    name = "Ambi API",
+    description = "Create, read, update, and delete members.",
+    endpoints = list(
+      members = "./api/members",
+      example_member = "./api/members/1"
+    )
+  ))
+})
+
 # gets all members:
 app$get("/api/members", \(req, res) {
   res$json(members)
