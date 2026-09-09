@@ -1,5 +1,6 @@
 [content]
-name = '"Plumber API"'
+name = "Plumber Formats"
+summary = "Serve sample API responses and downloads."
 entrypoint = "plumber.R"
 access_type = "external"
 content_type = "plumber"

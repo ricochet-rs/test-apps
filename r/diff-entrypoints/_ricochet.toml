@@ -1,5 +1,6 @@
 [content]
-name = "entrypoint tests"
+name = "Entrypoints"
+summary = "Switch between two histogram apps."
 entrypoint = "a.R"
 access_type = "internal"
 content_type = "shiny"

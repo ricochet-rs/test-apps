@@ -1,6 +1,7 @@
 [content]
 id = "01M1Q21G705Y0Z1NWSF0DQXEXA"
-name = "HTTP.jl hello, world!"
+name = "HTTP Julia JWT"
+summary = "Verify identity and echo WebSocket messages."
 entrypoint = "app.jl"
 access_type = "external"
 content_type = "julia-service"

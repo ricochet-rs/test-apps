@@ -1,7 +1,7 @@
 [project]
 name = "flask-hello"
 version = "0.1.0"
-description = "Add your description here"
+description = "Serve greeting and health JSON."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

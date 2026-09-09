@@ -1,5 +1,6 @@
 [content]
-name = "plumber2-penguins"
+name = "Plumber2 Pages"
+summary = "Serve penguin pages styled with Tailwind CSS."
 entrypoint = "_server.yml"
 access_type = "external"
 content_type = "r-server"

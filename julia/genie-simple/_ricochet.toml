@@ -1,6 +1,7 @@
 [content]
 id = "01M1PPXFKN6W3X2WWPSM8X3DRS"
-name = "Genie.jl TODO tracker"
+name = "Genie Todos"
+summary = "Add, filter, and complete session todos."
 entrypoint = "app.jl"
 access_type = "external"
 content_type = "julia-service"

@@ -1,5 +1,6 @@
 [content]
-name = "Hello, Quarto Python!"
+name = "Quarto Python"
+summary = "Render a sine plot and a calculation."
 entrypoint = "hello.qmd"
 access_type = "external"
 content_type = "quarto-py"

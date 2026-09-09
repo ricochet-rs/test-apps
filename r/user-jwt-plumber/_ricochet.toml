@@ -1,6 +1,7 @@
 [content]
 id = "01KWMS7BJT7C6JFQCMN3GNMDSJ"
-name = "user-jwt"
+name = "Plumber JWT"
+summary = "Verify and return the caller's identity."
 entrypoint = "plumber.R"
 access_type = "external"
 content_type = "plumber"

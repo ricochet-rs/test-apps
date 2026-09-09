@@ -1,5 +1,6 @@
 [content]
-name = "rmd-test"
+name = "R Markdown Params"
+summary = "Render supplied report parameters."
 entrypoint = "index.Rmd"
 access_type = "internal"
 content_type = "rmd"

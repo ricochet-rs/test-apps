@@ -1,5 +1,6 @@
 [content]
-name = "Quarto tesst static"
+name = "Quarto Dashboard"
+summary = "Summarize labor and delivery statistics."
 entrypoint = "dashboard.qmd"
 access_type = "private"
 content_type = "quarto-r"

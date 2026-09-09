@@ -1,6 +1,7 @@
 [content]
 id = "01KWT6X6NBMNR9RE5BGKBMYJHE"
-name = "user-jwt-shiny-py"
+name = "Shiny Python JWT"
+summary = "Display the caller's verified identity."
 entrypoint = "app.py"
 access_type = "internal"
 content_type = "shiny-py"

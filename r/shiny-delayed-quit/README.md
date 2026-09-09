@@ -1,5 +1,6 @@
-# Internal app failure
+# Shiny Exit
 
-This is a shiny app that is designed to error quit with a non-zero exit code after 1 second.
+This Shiny app exits its R process about one second after a session connects.
+It calls `quit(save = "no")`, which uses exit status zero by default.
 
-This app is used for ricochet's integration testing to ensure that apps that quick are appropriately reaped.
+Use it to test that Ricochet handles session disconnection and reaps a process that exits after startup.

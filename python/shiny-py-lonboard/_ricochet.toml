@@ -1,9 +1,9 @@
 [content]
-name = "King County House Prices"
+name = "Housing Map"
 entrypoint = "app.py"
 access_type = "external"
 content_type = "shiny-py"
-summary = "Use lonboard and shiny for python to explore housing prices in King county."
+summary = "Explore King County house prices."
 
 [language]
 name = "python"

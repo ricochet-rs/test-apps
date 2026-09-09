@@ -1,5 +1,6 @@
 [content]
-name = "Hello, Julia!"
+name = "Julia Penguins"
+summary = "Inspect and plot penguin measurements."
 entrypoint = "main.jl"
 access_type = "private"
 content_type = "julia"

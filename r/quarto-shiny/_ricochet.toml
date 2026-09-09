@@ -1,5 +1,6 @@
 [content]
-name = "Quarto Shiny App"
+name = "Quarto Shiny"
+summary = "Adjust an Old Faithful histogram."
 entrypoint = "app.qmd"
 access_type = "private"
 content_type = "quarto-r-shiny"

@@ -1,5 +1,6 @@
 [content]
-name = "Hello, Ambiorix!"
+name = "Ambiorix Counter"
+summary = "Serve a page with a click counter."
 entrypoint = "index.R"
 access_type = "external"
 content_type = "ambiorix"

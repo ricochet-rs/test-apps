@@ -1,7 +1,7 @@
 [project]
 name = "fastapi-hello"
 version = "0.1.0"
-description = "Add your description here"
+description = "Serve API docs and a health endpoint."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

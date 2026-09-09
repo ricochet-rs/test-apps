@@ -1,5 +1,6 @@
 [content]
-name = "Hello, Dash!"
+name = "Dash Python"
+summary = "Display a Dash greeting."
 entrypoint = "app.py"
 access_type = "external"
 content_type = "dash"

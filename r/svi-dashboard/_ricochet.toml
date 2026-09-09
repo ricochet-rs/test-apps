@@ -1,5 +1,6 @@
 [content]
-name = "hcde-final-viz"
+name = "SVI Map"
+summary = "Explore Washington social vulnerability data."
 entrypoint = "app.R"
 access_type = "external"
 content_type = "shiny"

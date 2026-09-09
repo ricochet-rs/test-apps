@@ -1,5 +1,6 @@
 [content]
-name = "shiny-py-test"
+name = "Shiny Penguins"
+summary = "Compare penguin bill lengths by species."
 entrypoint = "app.py"
 access_type = "internal"
 content_type = "shiny-py"

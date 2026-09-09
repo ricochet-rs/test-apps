@@ -1,5 +1,6 @@
 [content]
-name = "Python sleep"
+name = "Python Sleep"
+summary = "Log progress through nine timed iterations."
 entrypoint = "main.py"
 access_type = "private"
 content_type = "python"

@@ -1,5 +1,6 @@
 [content]
-name = "hello-golem"
+name = "Golem"
+summary = "Serve the Golem welcome app."
 entrypoint = "app.R"
 access_type = "external"
 content_type = "shiny"

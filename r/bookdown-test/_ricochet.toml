@@ -1,5 +1,6 @@
 [content]
-name = "my bookdown "
+name = "Bookdown"
+summary = "Render a multi-chapter example book."
 entrypoint = "index.Rmd"
 access_type = "private"
 content_type = "rmd"

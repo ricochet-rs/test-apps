@@ -1,5 +1,6 @@
 [content]
-name = "Long sleep"
+name = "R Sleep"
+summary = "Log timestamps for five minutes."
 entrypoint = "main.R"
 access_type = "private"
 content_type = "r"

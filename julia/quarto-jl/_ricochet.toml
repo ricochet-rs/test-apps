@@ -1,6 +1,7 @@
 [content]
 id = "01M14J6R9YW9YK7JJ1GCJY1V2A"
-name = "Quato Julia"
+name = "Quarto Julia"
+summary = "Render function and penguin plots."
 entrypoint = "index.qmd"
 access_type = "external"
 content_type = "quarto-jl"

@@ -1,5 +1,6 @@
 [content]
-name = "Hello, Flask!"
+name = "Flask"
+summary = "Serve greeting and health JSON."
 entrypoint = "app.py"
 access_type = "external"
 content_type = "flask"
