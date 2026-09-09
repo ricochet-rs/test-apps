@@ -1,7 +1,7 @@
 [project]
 name = "sleep"
 version = "0.1.0"
-description = "Add your description here"
+description = "Log progress through nine timed iterations."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [

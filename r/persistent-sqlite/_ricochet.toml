@@ -1,7 +1,7 @@
 [content]
-name = "SQLite Persistence"
+name = "SQLite"
 tags = ["persistence", "shiny", "demo"]
-summary = "Demonstrating the use of persistent directorys in `ricochet`."
+summary = "Save and display messages in SQLite."
 slug = "app-persistence"
 entrypoint = "app.R"
 access_type = "external"

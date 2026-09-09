@@ -1,5 +1,6 @@
 [content]
-name = "Geocoding App"
+name = "Geocoding"
+summary = "Find places from search text."
 entrypoint = "app.R"
 access_type = "private"
 content_type = "shiny"

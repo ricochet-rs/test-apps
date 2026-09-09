@@ -1,7 +1,7 @@
 [project]
 name = "user-jwt-shiny"
 version = "0.1.0"
-description = "Add your description here"
+description = "Display the caller's verified identity."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [

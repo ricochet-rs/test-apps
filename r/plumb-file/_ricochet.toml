@@ -1,5 +1,6 @@
 [content]
-name = "Plumber API"
+name = "Plumber Uploads"
+summary = "Accept uploads and read CSV files."
 entrypoint = "plumber.R"
 access_type = "private"
 content_type = "plumber"

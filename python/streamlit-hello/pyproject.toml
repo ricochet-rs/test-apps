@@ -1,7 +1,7 @@
 [project]
 name = "streamlit-hello"
 version = "0.1.0"
-description = "Add your description here"
+description = "Greet a user by name."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

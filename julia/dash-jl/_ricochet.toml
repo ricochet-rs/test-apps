@@ -1,5 +1,6 @@
 [content]
-name = "Plotly Dash Demo"
+name = "Dash Julia"
+summary = "Adjust a power curve with a slider."
 entrypoint = "app.jl"
 access_type = "external"
 content_type = "julia-service"

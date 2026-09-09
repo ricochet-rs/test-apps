@@ -1,5 +1,6 @@
 [content]
-name = "list headers"
+name = "Plumber Headers"
+summary = "Display incoming request headers."
 entrypoint = "plumber.R"
 access_type = "private"
 content_type = "plumber"

@@ -1,5 +1,6 @@
 [content]
-name = "Ambi API"
+name = "Ambiorix CRUD"
+summary = "Manage an in-memory member list."
 entrypoint = "app.R"
 access_type = "external"
 content_type = "ambiorix"

@@ -1,6 +1,7 @@
 [content]
 id = "01KXV49FQRR927TQWM10D9CSNZ"
-name = "Report Integration"
+name = "Quarto R Report"
+summary = "Plot penguin body mass and bill length."
 entrypoint = "report.qmd"
 access_type = "external"
 content_type = "quarto-r"

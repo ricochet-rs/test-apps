@@ -1,5 +1,6 @@
 [content]
-name = "Hello, Streamlit!"
+name = "Streamlit"
+summary = "Greet a user by name."
 entrypoint = "app.py"
 access_type = "external"
 content_type = "streamlit"

@@ -1,6 +1,7 @@
 [content]
 id = "01KWMTGGKG2B2FXP5S314V0J97"
-name = "user-jwt-shiny"
+name = "Shiny R JWT"
+summary = "Display the caller's verified identity."
 entrypoint = "app.R"
 access_type = "internal"
 content_type = "shiny"

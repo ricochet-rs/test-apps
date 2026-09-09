@@ -1,6 +1,7 @@
 [content]
 id = "01KWQD4EFVEV2NNNZMQDR3V1MQ"
-name = "internal-app-failure"
+name = "Shiny Exit"
+summary = "Exit shortly after a session connects."
 entrypoint = "app.R"
 access_type = "internal"
 content_type = "shiny"

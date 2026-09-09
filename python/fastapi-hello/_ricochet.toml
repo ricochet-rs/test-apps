@@ -1,5 +1,6 @@
 [content]
-name = "Hello, FastAPI!"
+name = "FastAPI"
+summary = "Serve API docs and a health endpoint."
 entrypoint = "app.py"
 access_type = "external"
 content_type = "fast-api"

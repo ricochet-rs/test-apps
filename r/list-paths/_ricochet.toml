@@ -1,6 +1,7 @@
 [content]
 id = "01KTC5BHSKDS12PSMVVXK72N3R"
-name = "security-audit"
+name = "File Browser"
+summary = "List files in a selected directory."
 entrypoint = "app.R"
 access_type = "private"
 content_type = "shiny"

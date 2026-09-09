@@ -1,5 +1,6 @@
 [content]
-name = "538 Polls Election 2024"
+name = "Election Polls"
+summary = "Plot Harris and Trump polling trends."
 entrypoint = "main.R"
 access_type = "private"
 content_type = "r"

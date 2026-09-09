@@ -1,5 +1,6 @@
 [content]
-name = "reverse geocode"
+name = "Reverse Geocoding"
+summary = "Find an address by clicking a map."
 entrypoint = "app.R"
 access_type = "internal"
 content_type = "shiny"

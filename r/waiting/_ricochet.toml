@@ -1,6 +1,7 @@
 [content]
 id = "01KTBY1VY54A04WZ0P394FGP7K"
-name = "Waiting App"
+name = "Shiny Logs"
+summary = "Show a histogram and emit recurring logs."
 entrypoint = "app.R"
 access_type = "external"
 content_type = "shiny"
