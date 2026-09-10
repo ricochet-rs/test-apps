@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYG0F069H21PXKBF12MC8"
 name = "Quarto Python"
 summary = "Render a sine plot and a calculation."
 entrypoint = "hello.qmd"

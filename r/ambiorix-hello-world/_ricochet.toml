@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYK06Z7A45XNAW0RP5ZCC"
 name = "Ambiorix Counter"
 summary = "Serve a page with a click counter."
 entrypoint = "index.R"

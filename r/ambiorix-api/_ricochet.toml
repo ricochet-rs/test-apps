@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYQXV7RBF9DK0RR5CZ4JJ"
 name = "Ambiorix CRUD"
 summary = "Manage an in-memory member list."
 entrypoint = "app.R"

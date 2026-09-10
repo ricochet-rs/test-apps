@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYH7SWAD9YVDNT8KMKMMA"
 name = "FastAPI"
 summary = "Serve API docs and a health endpoint."
 entrypoint = "app.py"

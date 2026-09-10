@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYR4HW810QSYM6MYY4MP2"
 name = "Quarto Shiny"
 summary = "Adjust an Old Faithful histogram."
 entrypoint = "app.qmd"

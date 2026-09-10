@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYPMYRKESAMKM9VR3GTNR"
 name = "R Markdown Params"
 summary = "Render supplied report parameters."
 entrypoint = "index.Rmd"

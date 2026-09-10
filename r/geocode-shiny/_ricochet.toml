@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYKGBM3187CNZ6C1SS6J2"
 name = "Geocoding"
 summary = "Find places from search text."
 entrypoint = "app.R"

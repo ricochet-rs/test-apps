@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYV50TKSX7X77VCWVDFA0"
 name = "Dash Julia"
 summary = "Adjust a power curve with a slider."
 entrypoint = "app.jl"

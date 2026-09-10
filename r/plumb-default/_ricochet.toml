@@ -1,5 +1,6 @@
 [content]
-name = "Plumber Formats"
+id = "01M25QYQDQNHF11VRDM1M3A0H7"
+name = "Plumber API"
 summary = "Serve sample API responses and downloads."
 entrypoint = "plumber.R"
 access_type = "external"

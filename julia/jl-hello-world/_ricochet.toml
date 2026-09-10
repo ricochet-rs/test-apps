@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYTGXPRA47AKZGY7B9ADF"
 name = "Julia Penguins"
 summary = "Inspect and plot penguin measurements."
 entrypoint = "main.jl"

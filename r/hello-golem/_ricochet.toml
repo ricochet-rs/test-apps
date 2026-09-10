@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYS6EVCSXNJNK3AN0MX8A"
 name = "Golem"
 summary = "Serve the Golem welcome app."
 entrypoint = "app.R"

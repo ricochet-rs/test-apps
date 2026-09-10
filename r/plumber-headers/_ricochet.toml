@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYN68J3F844WT645FDZ4M"
 name = "Plumber Headers"
 summary = "Display incoming request headers."
 entrypoint = "plumber.R"

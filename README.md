@@ -6,6 +6,9 @@ Applications, scripts, and documents for testing deployments to Ricochet.
 
 Each row gives a short name, a description, and the deployment features the item exercises.
 Directory names are stable; configured items use the same display name and summary in `_ricochet.toml`.
+Keep one deployed item per example, and add examples only when they exercise a distinct runtime, entrypoint, rendering mode, or behavior.
+For example, the histogram examples cover alternate R entrypoints, recurring Shiny logs, Quarto Shiny, and prerendered R Markdown; the JWT examples cover different language and server integrations.
+`Golem` is the display name of `r/hello-golem`, not a separate example.
 
 | App | Name | Description | Scope |
 | --- | --- | --- | --- |
@@ -17,10 +20,10 @@ Directory names are stable; configured items use the same display name and summa
 | [r/hello-golem](r/hello-golem/) | Golem | Serve the Golem welcome app. | Shiny package loading; bundled assets |
 | [r/list-paths](r/list-paths/) | File Browser | List files in a selected directory. | Shiny; filesystem isolation inspection |
 | [r/persistent-sqlite](r/persistent-sqlite/) | SQLite | Save and display messages in SQLite. | Shiny; persistent storage across instances |
-| [r/plumb-default](r/plumb-default/) | Plumber Formats | Serve sample API responses and downloads. | JSON; PNG; PDF; text; HTML; binary |
+| [r/plumb-default](r/plumb-default/) | Plumber API | Serve sample API responses and downloads. | JSON; PNG; PDF; text; HTML; binary |
 | [r/plumb-file](r/plumb-file/) | Plumber Uploads | Accept uploads and read CSV files. | Multipart requests; file parsing |
 | [r/plumber-headers](r/plumber-headers/) | Plumber Headers | Display incoming request headers. | HTTP proxy header forwarding |
-| [r/plumber2-tailwind-ssr](r/plumber2-tailwind-ssr/) | Plumber2 Pages | Serve penguin pages styled with Tailwind CSS. | R server; HTML rendering; species routes |
+| [r/plumber2-tailwind-ssr](r/plumber2-tailwind-ssr/) | Plumber2 Pages | Serve penguin pages styled with Tailwind CSS. | R service; HTML rendering; species routes; HTML 404 responses |
 | [r/polls-538](r/polls-538/) | Election Polls | Plot Harris and Trump polling trends. | R batch job; bundled JSON; persistent PNG output |
 | [r/quarto-dashboard](r/quarto-dashboard/) | Quarto Dashboard | Summarize labor and delivery statistics. | Static dashboard; Excel data; themes and assets |
 | [r/quarto-report](r/quarto-report/) | Quarto R Report | Plot penguin body mass and bill length. | Quarto R execution; HTML report rendering |
@@ -57,5 +60,12 @@ Use `just deploy-all` to deploy every item with an `_ricochet.toml` to your Rico
 Use `just deploy-all server=SERVER` to select a server, or `just deploy-all-dev` to use `ricochet-dev`.
 The `r/rmd-shiny-prerendered` and `python/marimo-high-dim-data` examples have no deployment config and are skipped by these recipes.
 
+Reuse the existing `content.id` when redeploying or renaming an example so it updates the same item.
+The saved IDs target `apps.pat-s.me` in the `ricochet-pat-s` namespace.
+If the local config has lost its ID, recover the existing item's ID with `ricochet app list` or `ricochet task list` before deploying again.
+
 Use `just clean-ids` to remove saved content IDs from the deployment configs before deploying them as new items.
 This command requires R and the `cli` and `tomledit` packages.
+
+For `r/hello-golem`, `.renvignore` excludes the `dev/` scaffolding from dependency discovery so `renv.lock` describes the deployed app's runtime dependencies.
+Keep startup dependencies such as `pkgload` in `DESCRIPTION`, and run `renv::snapshot()` from the app directory after changing dependencies.

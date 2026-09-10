@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYN0AFC0BBNR9WAP93ZE4"
 name = "Plumber Uploads"
 summary = "Accept uploads and read CSV files."
 entrypoint = "plumber.R"

@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYHRBFVC6RWHWMQCW8YK7"
 name = "Dash Python"
 summary = "Display a Dash greeting."
 entrypoint = "app.py"

@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYMAN5KM7DYWHPSX88FES"
 name = "SVI Map"
 summary = "Explore Washington social vulnerability data."
 entrypoint = "app.R"

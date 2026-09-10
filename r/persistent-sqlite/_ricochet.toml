@@ -1,4 +1,5 @@
 [content]
+id = "01M1XG4KAY2ZCMKQ09BPARJNJF"
 name = "SQLite"
 tags = ["persistence", "shiny", "demo"]
 summary = "Save and display messages in SQLite."

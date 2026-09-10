@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYRN3ARYBK925DG405Q8M"
 name = "Entrypoints"
 summary = "Switch between two histogram apps."
 entrypoint = "a.R"
