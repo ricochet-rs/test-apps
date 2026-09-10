@@ -2,7 +2,7 @@
 id = "01M25X3DDBXYF09FCJEMDYHBQ1"
 name = "Plumber2 Pages"
 summary = "Serve penguin pages styled with Tailwind CSS."
-entrypoint = "app.R"
+entrypoint = "_server.yml"
 access_type = "external"
 content_type = "r-server"
 
