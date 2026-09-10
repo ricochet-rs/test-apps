@@ -1,7 +1,7 @@
 [content]
 id = "01M25QYKGBM3187CNZ6C1SS6J2"
 name = "Geocoding"
-summary = "Find places from search text."
+summary = "Find places by searching or clicking a map."
 entrypoint = "app.R"
 access_type = "private"
 content_type = "shiny"

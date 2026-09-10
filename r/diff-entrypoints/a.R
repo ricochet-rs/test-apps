@@ -19,6 +19,11 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
+  observe({
+    invalidateLater(1000, session)
+    message("Shiny session is active")
+  })
+
   # Print message whenever slider changes
   observeEvent(input$bins, {
     message("Slider moved! New bin count: ", input$bins)

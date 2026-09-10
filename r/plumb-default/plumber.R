@@ -87,3 +87,22 @@ function(res) {
   # Return the binary contents
   bin
 }
+
+#* Display incoming request headers
+#* @get /list-headers
+function(req) {
+  cbind(names(req$HEADERS), req$HEADERS)
+}
+
+#* Inspect uploaded multipart files
+#* @post /upload
+function(req) {
+  mime::parse_multipart(req)
+}
+
+#* Read an uploaded CSV file
+#* @post /read_csv
+function(req) {
+  mp <- mime::parse_multipart(req)
+  read.csv(mp$file$datapath)
+}

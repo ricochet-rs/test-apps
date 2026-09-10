@@ -1,7 +1,7 @@
 [content]
 id = "01M25QYRN3ARYBK925DG405Q8M"
 name = "Entrypoints"
-summary = "Switch between two histogram apps."
+summary = "Switch entrypoints and stream session logs."
 entrypoint = "a.R"
 access_type = "internal"
 content_type = "shiny"

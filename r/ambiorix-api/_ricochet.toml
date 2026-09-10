@@ -1,7 +1,7 @@
 [content]
 id = "01M25QYQXV7RBF9DK0RR5CZ4JJ"
 name = "Ambiorix CRUD"
-summary = "Manage an in-memory member list."
+summary = "Manage members and serve a browser counter."
 entrypoint = "app.R"
 access_type = "external"
 content_type = "ambiorix"

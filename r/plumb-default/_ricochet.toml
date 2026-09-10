@@ -1,7 +1,7 @@
 [content]
 id = "01M25QYQDQNHF11VRDM1M3A0H7"
 name = "Plumber API"
-summary = "Serve sample API responses and downloads."
+summary = "Serve responses, inspect headers, and accept uploads."
 entrypoint = "plumber.R"
 access_type = "external"
 content_type = "plumber"
