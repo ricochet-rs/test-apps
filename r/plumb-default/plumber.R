@@ -43,15 +43,6 @@ function() {
   hist(rand)
 }
 
-#* Return the sum of two numbers
-#* @param a The first number to add
-#* @param b The second number to add
-#* @post /sum
-function(a, b) {
-  as.numeric(a) + as.numeric(b)
-}
-
-
 #* @serializer pdf
 #* @get /pdf
 function() {
@@ -95,4 +86,23 @@ function(res) {
 
   # Return the binary contents
   bin
+}
+
+#* Display incoming request headers
+#* @get /list-headers
+function(req) {
+  cbind(names(req$HEADERS), req$HEADERS)
+}
+
+#* Inspect uploaded multipart files
+#* @post /upload
+function(req) {
+  mime::parse_multipart(req)
+}
+
+#* Read an uploaded CSV file
+#* @post /read_csv
+function(req) {
+  mp <- mime::parse_multipart(req)
+  read.csv(mp$file$datapath)
 }

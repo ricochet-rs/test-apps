@@ -8,4 +8,4 @@ pkgload::load_all(
   attach_testthat = FALSE
 )
 options("golem.app.prod" = TRUE)
-run_app()
+pkgload::pkg_env("myapp")$run_app()

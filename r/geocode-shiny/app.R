@@ -7,6 +7,7 @@ library(arcgisgeocode)
 # Define the UI layout using {bslib}
 ui <- page_sidebar(
   card(
+    card_title(textOutput("rev_result")),
     leafletOutput("map", width = "100%", height = "100%"),
   ),
   sidebar = sidebar(
@@ -22,9 +23,7 @@ server <- function(input, output, session) {
   # this reactively gets the center of the map thats in screen
   bounds <- reactive({
     loc <- input$map_center
-    if (
-      !is.null(loc)
-    ) {
+    if (!is.null(loc)) {
       c(loc[[1]], loc[[2]])
     }
   })
@@ -83,6 +82,24 @@ server <- function(input, output, session) {
     }
   })
 
+  observeEvent(input$map_click, {
+    # get the click location
+    click <- input$map_click
+
+    # extract the x and y coordinate
+    x <- click$lng
+    y <- click$lat
+    loc <- c(x, y)
+
+    geocoded <- reverse_geocode(loc)
+
+    output$rev_result <- renderText(geocoded$long_label)
+
+    leafletProxy("map", data = sf::st_geometry(geocoded)) |>
+      clearMarkers() |>
+      addMarkers()
+  })
+
   output$map <- renderLeaflet({
     leaflet() |>
       # use esri canvas
@@ -97,7 +114,10 @@ make_suggestion_list <- function(suggestions) {
   lis <- lapply(suggestions$text, \(.x) {
     htmltools::tag(
       "li",
-      c("class" = "list-group-item list-group-item-action border-light text-sm", .x)
+      c(
+        "class" = "list-group-item list-group-item-action border-light text-sm",
+        .x
+      )
     )
   })
 

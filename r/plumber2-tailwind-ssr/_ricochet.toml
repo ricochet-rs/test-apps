@@ -1,9 +1,10 @@
 [content]
+id = "01M25X3DDBXYF09FCJEMDYHBQ1"
 name = "Plumber2 Pages"
 summary = "Serve penguin pages styled with Tailwind CSS."
-entrypoint = "_server.yml"
+entrypoint = "app.R"
 access_type = "external"
-content_type = "r-server"
+content_type = "r-service"
 
 [language]
 name = "r"

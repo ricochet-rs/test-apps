@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYGDH2C1XYS7CV2BE34QY"
 name = "Streamlit"
 summary = "Greet a user by name."
 entrypoint = "app.py"

@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYGRBZQZ68A7HEHHJXBNF"
 name = "Flask"
 summary = "Serve greeting and health JSON."
 entrypoint = "app.py"

@@ -1,4 +1,5 @@
 [content]
+id = "01M25QYQ4YGZH9YDQ0BKMJ0K9V"
 name = "Bookdown"
 summary = "Render a multi-chapter example book."
 entrypoint = "index.Rmd"
