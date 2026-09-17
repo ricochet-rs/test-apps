@@ -1,0 +1,20 @@
+[content]
+name = "Prerendered Shiny"
+summary = "Adjust a prerendered histogram."
+thumbnail = "thumbnail.png"
+entrypoint = "index.Rmd"
+access_type = "private"
+content_type = "rmd-shiny"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[packages]
+r = { CRAN = "https://cran.rpkgs.com/" }
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10

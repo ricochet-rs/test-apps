@@ -26,7 +26,7 @@ For example, the histogram examples cover alternate R entrypoints, recurring Shi
 | [r/quarto-report](r/quarto-report/) | Quarto R Report | Plot penguin body mass and bill length. | Quarto R execution; HTML report rendering |
 | [r/quarto-shiny](r/quarto-shiny/) | Quarto Shiny | Adjust an Old Faithful histogram. | Quarto document; reactive Shiny server |
 | [r/rmd-parameterized](r/rmd-parameterized/) | R Markdown Params | Render supplied report parameters. | R Markdown; parameter handling |
-| [r/rmd-shiny-prerendered](r/rmd-shiny-prerendered/) | Prerendered Shiny | Adjust a prerendered histogram. | R Markdown; Shiny server chunks; no deployment config |
+| [r/rmd-shiny-prerendered](r/rmd-shiny-prerendered/) | Prerendered Shiny | Adjust a prerendered histogram. | R Markdown; Shiny server chunks |
 | [r/shiny-delayed-quit](r/shiny-delayed-quit/) | Shiny Exit | Exit shortly after a session connects. | Process termination; session disconnect; reaping |
 | [r/sleepy](r/sleepy/) | R Sleep | Log timestamps for five minutes. | Long-running R job; log streaming |
 | [r/srvrless-hello](r/srvrless-hello/) | R Functions | Expose R functions as HTTP endpoints. | Serverless routes; JSON and CSV serialization |
@@ -36,7 +36,7 @@ For example, the histogram examples cover alternate R entrypoints, recurring Shi
 | [python/dash-hello](python/dash-hello/) | Dash Python | Display a Dash greeting. | Python Dash startup; HTML layout |
 | [python/fastapi-hello](python/fastapi-hello/) | FastAPI | Serve API docs and a health endpoint. | ASGI; OpenAPI docs; proxy root path |
 | [python/flask-hello](python/flask-hello/) | Flask | Serve greeting and health JSON. | WSGI; Flask routing |
-| [python/marimo-high-dim-data](python/marimo-high-dim-data/) | Marimo Tables | Explore selectable and styled tables. | Reactive notebook; table widgets; no deployment config |
+| [python/marimo-high-dim-data](python/marimo-high-dim-data/) | Marimo Tables | Explore selectable and styled tables. | Reactive notebook; table widgets; Python service |
 | [python/python-sleep](python/python-sleep/) | Python Sleep | Log progress through nine timed iterations. | Python batch job; log streaming; completion |
 | [python/quarto-py-hello](python/quarto-py-hello/) | Quarto Python | Render a sine plot and a calculation. | Quarto; Jupyter execution; HTML output |
 | [python/shiny-py-lonboard](python/shiny-py-lonboard/) | Housing Map | Explore King County house prices. | Shiny; Lonboard widgets; spatial filtering; Parquet |
@@ -59,7 +59,7 @@ The single-file variants emit recurring session logs.
 
 Use `just deploy-all` to deploy every item with an `_ricochet.toml` to your Ricochet server.
 Use `just deploy-all server=SERVER` to select a server, or `just deploy-all-dev` to use `ricochet-dev`.
-The `r/rmd-shiny-prerendered` and `python/marimo-high-dim-data` examples have no deployment config and are skipped by these recipes.
+Every catalog item has a deployment config with its own thumbnail image.
 
 Reuse the existing `content.id` when redeploying or renaming an example so it updates the same item.
 The saved IDs target `apps.pat-s.me` in the `ricochet-pat-s` namespace.

@@ -1,11 +1,12 @@
 [content]
+thumbnail = "thumbnail.png"
 id = "01M25QYMAN5KM7DYWHPSX88FES"
 name = "SVI Map"
 summary = "Explore Washington social vulnerability data."
 entrypoint = "app.R"
 access_type = "external"
 content_type = "shiny"
-include = ["app.R", "data/SVI2022_WASHINGTON_tract.gdb/**", "renv.lock"]
+include = ["thumbnail.png", "app.R", "data/SVI2022_WASHINGTON_tract.gdb/**", "renv.lock"]
 
 [language]
 name = "r"

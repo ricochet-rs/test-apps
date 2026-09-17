@@ -1,4 +1,5 @@
 [content]
+thumbnail = "thumbnail.png"
 id = "01KXV49FQRR927TQWM10D9CSNZ"
 name = "Quarto R Report"
 summary = "Plot penguin body mass and bill length."

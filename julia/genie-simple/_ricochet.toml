@@ -1,4 +1,5 @@
 [content]
+thumbnail = "thumbnail.png"
 id = "01M1PPXFKN6W3X2WWPSM8X3DRS"
 name = "Genie Todos"
 summary = "Add, filter, and complete session todos."
