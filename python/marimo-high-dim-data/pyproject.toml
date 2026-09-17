@@ -11,4 +11,5 @@ dependencies = [
     "pandas>=3.0.1",
     "polars>=1.39.3",
     "scikit-learn>=1.8.0",
+    "uvicorn>=0.41.0",
 ]

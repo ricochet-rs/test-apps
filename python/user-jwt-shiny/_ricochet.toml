@@ -1,4 +1,5 @@
 [content]
+thumbnail = "thumbnail.png"
 id = "01KWT6X6NBMNR9RE5BGKBMYJHE"
 name = "Shiny Python JWT"
 summary = "Display the caller's verified identity."

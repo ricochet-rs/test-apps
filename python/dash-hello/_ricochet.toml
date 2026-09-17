@@ -1,4 +1,5 @@
 [content]
+thumbnail = "thumbnail.png"
 id = "01M25QYHRBFVC6RWHWMQCW8YK7"
 name = "Dash Python"
 summary = "Display a Dash greeting."

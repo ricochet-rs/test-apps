@@ -1,0 +1,17 @@
+[content]
+name = "Marimo Tables"
+summary = "Explore selectable and styled tables."
+thumbnail = "thumbnail.png"
+entrypoint = "serve.py"
+access_type = "private"
+content_type = "python-service"
+
+[language]
+name = "python"
+packages = "uv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10
