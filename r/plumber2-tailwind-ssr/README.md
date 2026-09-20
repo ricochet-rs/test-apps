@@ -1,9 +1,7 @@
-# Plumber2 Pages
+# plumber2 + server-side-rendering
 
-Serve penguin pages rendered in R and styled with Tailwind CSS.
-The home page links to species summaries, and unknown species return an HTML page with HTTP status 404.
+Run `ricochet deploy r/plumber2-tailwind-ssr` from the repository root to deploy the app.
 
-Ricochet runs `app.R` as an `r-service`; the script starts Plumber2 using the supplied `HOST` and `PORT`.
-The `_server.yml` file is not used by this deployment.
+This example {plumber2} API illustrates how to combine the power of tailwind css and server-side-rendering (SSR) to create beautiful full stack applications in R.
 
-Run `ricochet deploy r/plumber2-tailwind-ssr` from the repository root to deploy the configured item.
+[Plumber](http://rplumber.io/) and [{plumber2}](https://github.com/posit-dev/plumber2) are deceptively powerful R packages that—while thought of as "API" R packages—can be used for fully featured apps.
