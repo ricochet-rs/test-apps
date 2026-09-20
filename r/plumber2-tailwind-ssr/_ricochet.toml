@@ -1,6 +1,5 @@
 [content]
 thumbnail = "thumbnail.png"
-id = "01M25X3DDBXYF09FCJEMDYHBQ1"
 slug = "penguins-pages"
 name = "Plumber2 Pages"
 summary = "Serve penguin pages styled with Tailwind CSS."
