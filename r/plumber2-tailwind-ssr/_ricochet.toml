@@ -1,6 +1,5 @@
 [content]
 thumbnail = "thumbnail.png"
-slug = "penguins-pages"
 name = "Plumber2 Pages"
 summary = "Serve penguin pages styled with Tailwind CSS."
 entrypoint = "_server.yml"
@@ -12,7 +11,7 @@ name = "r"
 packages = "renv.lock"
 
 [serve]
-min_instances = 0
+min_instances = 1
 max_instances = 5
 spawn_threshold = 80
 max_connections = 10
