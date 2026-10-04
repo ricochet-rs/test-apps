@@ -1,0 +1,15 @@
+[project]
+name = "jupyter-hello"
+version = "0.1.0"
+description = "Render a timestamp, a sine plot, and a calculation."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.8",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "nbconvert>=7.16.6",
+]

@@ -1,0 +1,10 @@
+[content]
+name = "Jupyter Notebook"
+summary = "Render a timestamp, a sine plot, and a calculation."
+entrypoint = "hello.ipynb"
+access_type = "external"
+content_type = "jupyter"
+
+[language]
+name = "python"
+packages = "uv.lock"
