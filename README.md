@@ -28,6 +28,7 @@ For example, the histogram examples cover alternate R entrypoints, recurring Shi
 | [r/rmd-parameterized](r/rmd-parameterized/) | R Markdown Params | Render supplied report parameters. | R Markdown; parameter handling |
 | [r/rmd-shiny-prerendered](r/rmd-shiny-prerendered/) | Prerendered Shiny | Adjust a prerendered histogram. | R Markdown; Shiny server chunks |
 | [r/shiny-delayed-quit](r/shiny-delayed-quit/) | Shiny Exit | Exit shortly after a session connects. | Process termination; session disconnect; reaping |
+| [r/shiny-never-binds](r/shiny-never-binds/) | Shiny Never Binds | Fail before the app starts listening. | Failed starts; retry limit |
 | [r/sleepy](r/sleepy/) | R Sleep | Log timestamps for five minutes. | Long-running R job; log streaming |
 | [r/srvrless-hello](r/srvrless-hello/) | R Functions | Expose R functions as HTTP endpoints. | Serverless routes; JSON and CSV serialization |
 | [r/svi-dashboard](r/svi-dashboard/) | SVI Map | Explore Washington social vulnerability data. | Shiny; geodatabase assets; maps and county summaries |
