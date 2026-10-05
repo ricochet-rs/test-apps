@@ -1,6 +1,6 @@
 [content]
 thumbnail = "thumbnail.png"
-id = "01KWQD4EFVEV2NNNZMQDR3V1N0"
+id = "01M46CS4GKA865520NY20CW4RA"
 name = "Shiny Never Binds"
 summary = "Fail before the app starts listening."
 entrypoint = "app.R"
