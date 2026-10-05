@@ -1,5 +1,5 @@
 library(shiny)
-
+stop("oops")
 ui <- fluidPage(
   titlePanel("Self-terminating test app"),
   p("This app quits its own R process ~1 second after a session connects.")
