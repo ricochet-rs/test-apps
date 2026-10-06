@@ -1,0 +1,78 @@
+{
+  "id": "example-survey",
+  "version": "2026-10-06",
+  "title": "How do you deploy?",
+  "questions": [
+    {
+      "id": "cadence",
+      "short": "Cadence",
+      "type": "slider",
+      "prompt": "How many apps does your team deploy in a month?",
+      "help": "Count every app, API, script, or report.",
+      "min": 0,
+      "max": 10,
+      "default": 2,
+      "unit": "deployments a month"
+    },
+    {
+      "id": "language",
+      "short": "Language",
+      "type": "select",
+      "prompt": "Which language do you reach for first?",
+      "help": "The one you open when a new project lands on your desk.",
+      "placeholder": "Pick a language",
+      "options": [
+        { "value": "r", "label": "R" },
+        { "value": "julia", "label": "Julia" },
+        { "value": "python", "label": "Python" },
+        { "value": "polyglot", "label": "A bit of everything" }
+      ]
+    },
+    {
+      "id": "framework",
+      "short": "Framework",
+      "type": "combobox",
+      "prompt": "What do you deploy most often?",
+      "help": "Start typing to search.",
+      "placeholder": "Search frameworks",
+      "options": [
+        { "value": "shiny-r", "label": "Shiny", "group": "R" },
+        { "value": "plumber", "label": "Plumber", "group": "R" },
+        { "value": "plumber2", "label": "plumber2", "group": "R" },
+        { "value": "ambiorix", "label": "ambiorix", "group": "R" },
+        { "value": "rmarkdown", "label": "R Markdown", "group": "R" },
+        { "value": "genie", "label": "Genie", "group": "Julia" },
+        { "value": "oxygen", "label": "Oxygen", "group": "Julia" },
+        { "value": "shiny-py", "label": "Shiny for Python", "group": "Python" },
+        { "value": "fastapi", "label": "FastAPI", "group": "Python" },
+        { "value": "streamlit", "label": "Streamlit", "group": "Python" },
+        { "value": "dash", "label": "Dash", "group": "Python" },
+        { "value": "jupyter", "label": "Jupyter", "group": "Python" },
+        { "value": "quarto", "label": "Quarto", "group": "Any language" }
+      ]
+    },
+    {
+      "id": "friction",
+      "short": "Friction",
+      "type": "radio",
+      "prompt": "What slows you down the most?",
+      "help": "Choose the most relatable item.",
+      "options": [
+        { "value": "packages", "label": "Packages", "description": "Getting the right versions installed on the server." },
+        { "value": "access", "label": "Access", "description": "Keeping apps behind security controls." },
+        { "value": "scaling", "label": "Scaling", "description": "Dynamically scaling based on demand." },
+        { "value": "production", "label": "Production", "description": "Getting an app from my laptop to production." }
+      ]
+    },
+    {
+      "id": "Dream big 💭",
+      "short": "Dream",
+      "type": "textarea",
+      "required": false,
+      "prompt": "If ricochet had a magic button, what would it do?",
+      "help": "Optional. Dream big.",
+      "placeholder": "It would...",
+      "max_length": 500
+    }
+  ]
+}

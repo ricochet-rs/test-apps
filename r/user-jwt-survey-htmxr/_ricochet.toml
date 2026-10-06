@@ -1,0 +1,20 @@
+[content]
+id = "01M49JAYVMQZWJ0YXC3GJK31QM"
+name = "Survey"
+summary = "Run a resumable survey for the signed-in user."
+entrypoint = "_server.yml"
+access_type = "external"
+content_type = "r-server"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[packages]
+r = { CRAN = "https://cran.rpkgs.com/" }
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10
