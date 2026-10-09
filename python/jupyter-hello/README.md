@@ -1,6 +1,6 @@
 # Jupyter Notebook
 
-Render a timestamp, a sine plot, and a calculation.
+Summarize and plot the Palmer penguins dataset with plotnine.
 
 Scope: Jupyter notebook; nbconvert execution; scheduled HTML output.
 

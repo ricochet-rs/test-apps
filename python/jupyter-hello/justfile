@@ -1,0 +1,2 @@
+run:
+  uv run jupyter nbconvert --execute --to html hello.ipynb

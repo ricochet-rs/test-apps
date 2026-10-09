@@ -1,6 +1,7 @@
 [content]
+id = "01M44KW79GZ4GDV3XJV4JCMWFA"
 name = "Jupyter Notebook"
-summary = "Render a timestamp, a sine plot, and a calculation."
+summary = "Summarize and plot the Palmer penguins dataset with plotnine."
 entrypoint = "hello.ipynb"
 access_type = "external"
 content_type = "jupyter"
