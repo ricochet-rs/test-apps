@@ -1,4 +1,5 @@
 engine: plumber2
 routes: app.R
 constructor: ~
-options: {}
+options:
+  host: 0.0.0.0
