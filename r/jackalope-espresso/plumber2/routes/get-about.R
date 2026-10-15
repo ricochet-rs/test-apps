@@ -35,7 +35,7 @@ get_about <- function() {
         "It is a demo application to demonstrate the difference between Shiny",
         "and server-side rendering with plumber2."
       ),
-      tags$p(link_button("Taste the lineup", "/products"))
+      tags$p(link_button("Taste the lineup", "products"))
     )
   )
 }

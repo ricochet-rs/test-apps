@@ -6,6 +6,7 @@ get_product <- function(slug, response) {
     return(layout(
       title = "Not found",
       current = "products",
+      root = "../",
       tags$section(
         class = "section container narrow space-y-6",
         tags$h1(class = "title", "That coffee hopped away."),
@@ -15,7 +16,7 @@ get_product <- function(slug, response) {
           tags$code(slug),
           "."
         ),
-        link_button("Back to all coffees", "/products")
+        link_button("Back to all coffees", "../products")
       )
     ))
   }
@@ -23,11 +24,12 @@ get_product <- function(slug, response) {
   layout(
     title = coffee$name,
     current = "products",
+    root = "../",
     tags$section(
       class = "section container space-y-6",
       bc_breadcrumb(
-        bc_breadcrumb_item("Home", href = "/"),
-        bc_breadcrumb_item("Coffee", href = "/products"),
+        bc_breadcrumb_item("Home", href = "../"),
+        bc_breadcrumb_item("Coffee", href = "../products"),
         bc_breadcrumb_item(coffee$name, current = TRUE)
       ),
       tags$div(

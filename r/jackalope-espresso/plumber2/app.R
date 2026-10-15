@@ -20,32 +20,43 @@ fonts <- tagList(
     rel = "stylesheet",
     href = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600;700&display=swap"
   ),
-  tags$link(rel = "icon", type = "image/svg+xml", href = "/public/logo.svg"),
   tags$style(HTML(paste(readLines("site.css", warn = FALSE), collapse = "\n")))
 )
 
-layout <- function(..., title, current = NULL) {
+layout <- function(..., title, current = NULL, root = "./") {
   nav <- list(
     bc_nav_item(
       "Coffee",
-      href = "/products",
+      href = paste0(root, "products"),
       current = identical(current, "products")
     ),
-    bc_nav_item("About", href = "/about", current = identical(current, "about"))
+    bc_nav_item(
+      "About",
+      href = paste0(root, "about"),
+      current = identical(current, "about")
+    )
   )
 
   bc_page(
     title = paste(c(title, "Jackalope Coffee"), collapse = " · "),
+    assets = paste0(root, "basecoat/"),
     style = "lyra",
     theme = "theme.css",
-    head = fonts,
+    head = tagList(
+      fonts,
+      tags$link(
+        rel = "icon",
+        type = "image/svg+xml",
+        href = paste0(root, "public/logo.svg")
+      )
+    ),
     bc_page_navbar(
       title = tags$span(class = "brand", logo, "Jackalope"),
-      href = "/",
+      href = root,
       nav = nav,
       end = tagList(
         bc_theme_switcher(),
-        link_button("Shop coffee", "/products")
+        link_button("Shop coffee", paste0(root, "products"))
       ),
       ...
     ),
@@ -101,7 +112,7 @@ farm_item <- function(coffee) {
 product_card <- function(coffee) {
   tags$a(
     class = "product-card",
-    href = paste0("/products/", coffee$slug),
+    href = paste0("products/", coffee$slug),
     bc_card(
       label(coffee),
       bc_card_body(

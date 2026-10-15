@@ -15,7 +15,7 @@ get_home <- function() {
           tags$p(class = "promise", "Roasted to order. Shipped within a day."),
           tags$div(
             class = "flex flex-wrap gap-3",
-            link_button("Shop the coffee", "/products"),
+            link_button("Shop the coffee", "products"),
             link_button("Meet the farms", "#farms", "outline")
           )
         ),
@@ -28,7 +28,7 @@ get_home <- function() {
       tags$div(class = "product-grid", lapply(coffees[1:3], product_card)),
       tags$div(
         style = "margin-top: 2rem",
-        link_button("See all coffees", "/products", "outline")
+        link_button("See all coffees", "products", "outline")
       )
     ),
     tags$section(
