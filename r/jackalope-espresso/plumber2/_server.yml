@@ -1,5 +1,3 @@
 engine: plumber2
-routes: app.R
-constructor: ~
-options:
-  host: 0.0.0.0
+constructor: app.R
+options: {}

@@ -1,19 +1,11 @@
-options(plumber2.host = "0.0.0.0")
 library(basecoat)
 library(htmltools)
+library(plumber2)
 
 source("coffees.R")
 
-#* @statics ./public /public
-NULL
-
-#* @plumber
-function(api) {
-  plumber2::api_statics(
-    api,
-    at = "/basecoat/",
-    path = system.file("basecoat", package = "basecoat")
-  )
+for (route in list.files("routes", full.names = TRUE)) {
+  source(route)
 }
 
 logo_lines <- readLines("public/logo.svg", warn = FALSE)
@@ -126,190 +118,13 @@ product_card <- function(coffee) {
   )
 }
 
-#* @get /
-#* @parser none
-#* @serializer html
-function() {
-  layout(
-    title = NULL,
-    tags$section(
-      class = "hero",
-      tags$div(
-        class = "container",
-        tags$div(
-          class = "space-y-6",
-          tags$h1("Thumpin' good coffee."),
-          tags$p(
-            "Single-origin coffees for espresso and filter, from six farms",
-            "we buy from every harvest."
-          ),
-          tags$p(class = "promise", "Roasted to order. Shipped within a day."),
-          tags$div(
-            class = "flex flex-wrap gap-3",
-            link_button("Shop the coffee", "/products"),
-            link_button("Meet the farms", "#farms", "outline")
-          )
-        ),
-        tags$div(class = "hero-mark", logo, grass)
-      )
-    ),
-    tags$section(
-      class = "section container",
-      tags$h2(class = "title mb-4", "This week's coffees"),
-      tags$div(class = "product-grid", lapply(coffees[1:3], product_card)),
-      tags$div(
-        style = "margin-top: 2rem",
-        link_button("See all coffees", "/products", "outline")
-      )
-    ),
-    tags$section(
-      id = "farms",
-      class = "section farms",
-      tags$div(
-        class = "container",
-        tags$h2(class = "title", "Six farms, every harvest"),
-        tags$p(
-          class = "text-muted-foreground mb-4",
-          "We buy from the same six producers each year, so every coffee on",
-          "the menu comes from a farm we know."
-        ),
-        tags$div(class = "farm-grid", lapply(coffees, farm_item))
-      )
-    )
-  )
-}
+html <- get_serializers("html")
 
-#* @get /products
-#* @parser none
-#* @serializer html
-function() {
-  layout(
-    title = "Coffee",
-    current = "products",
-    tags$section(
-      class = "section container",
-      tags$h1(class = "title", "Our coffees"),
-      tags$p(
-        class = "text-muted-foreground mb-4",
-        "Every bag is roasted to order and shipped within a day."
-      ),
-      tags$div(class = "product-grid", lapply(coffees, product_card))
-    )
-  )
-}
-
-#* @get /products/<slug>
-#* @parser none
-#* @serializer html
-function(slug, response) {
-  coffee <- coffees[[slug]]
-
-  if (is.null(coffee)) {
-    response$status <- 404L
-    return(layout(
-      title = "Not found",
-      current = "products",
-      tags$section(
-        class = "section container narrow space-y-6",
-        tags$h1(class = "title", "That coffee hopped away."),
-        tags$p(
-          class = "text-muted-foreground",
-          "There is no coffee called ",
-          tags$code(slug),
-          "."
-        ),
-        link_button("Back to all coffees", "/products")
-      )
-    ))
-  }
-
-  layout(
-    title = coffee$name,
-    current = "products",
-    tags$section(
-      class = "section container space-y-6",
-      bc_breadcrumb(
-        bc_breadcrumb_item("Home", href = "/"),
-        bc_breadcrumb_item("Coffee", href = "/products"),
-        bc_breadcrumb_item(coffee$name, current = TRUE)
-      ),
-      tags$div(
-        class = "detail",
-        label(coffee),
-        tags$div(
-          class = "space-y-6",
-          tags$h1(class = "title", coffee$name),
-          tags$p(class = "text-lg", coffee$blurb),
-          tags$div(
-            class = "flex flex-wrap gap-2",
-            lapply(coffee$notes, bc_badge, variant = "outline")
-          ),
-          tags$dl(
-            class = "facts",
-            tags$dt("Roast"),
-            tags$dd(coffee$roast),
-            tags$dt("Process"),
-            tags$dd(coffee$process),
-            tags$dt("Elevation"),
-            tags$dd(coffee$elevation),
-            tags$dt("Bag"),
-            tags$dd("340 g, whole bean")
-          ),
-          tags$div(
-            class = "flex items-center gap-4",
-            tags$span(
-              class = "text-2xl font-semibold",
-              paste0("$", coffee$price)
-            ),
-            bc_button("Add to bag")
-          )
-        )
-      )
-    )
-  )
-}
-
-#* @get /about
-#* @parser none
-#* @serializer html
-function() {
-  layout(
-    title = "About",
-    current = "about",
-    tags$section(
-      class = "section container narrow prose",
-      tags$h1("About"),
-      tags$p(
-        "My first coffee job was in high school, at the kids' cafe in the Bay",
-        "Area Discovery Museum, just under the Golden Gate Bridge.",
-        "We poured",
-        tags$a(
-          href = "https://www.equatorcoffees.com/",
-          "Equator Coffees",
-          .noWS = "after"
-        ),
-        ", and it is still my favorite roaster.",
-        "I am wearing their hat right now."
-      ),
-      tags$p(
-        "In college, I walked half a mile through the snow to open",
-        tags$a(href = "https://montealto.com/", "Cafe Monte Alto"),
-        "in Plymouth, New Hampshire, by 5:30 in the morning.",
-        "Eddie and Micky, the zestiest couple I know, ran it as a cafe and a",
-        "roaster, and I served Jay Moskowitz (may he rest in peace) across",
-        "its counter.",
-        "That is where I fell for espresso drinks and learned latte art."
-      ),
-      tags$p(
-        "For my 27th birthday, I bought a Rancilio Silvia Pro X.",
-        "I make at least one cortado on it every day."
-      ),
-      tags$p(
-        "Jackalope is not a real roaster.",
-        "It is a demo application to demonstrate the difference between Shiny",
-        "and server-side rendering with plumber2."
-      ),
-      tags$p(link_button("Taste the lineup", "/products"))
-    )
-  )
-}
+api() |>
+  api_statics("/public", "public") |>
+  api_statics("/basecoat/", system.file("basecoat", package = "basecoat")) |>
+  api_get("/", get_home, serializers = html) |>
+  api_get("/products", get_products, serializers = html) |>
+  api_get("/products/<slug>", get_product, serializers = html) |>
+  api_get("/about", get_about, serializers = html) |>
+  api_run(host = "0.0.0.0", port = as.integer(Sys.getenv("PORT", "8080")))
