@@ -1,3 +1,4 @@
+options(plumber2.host = "0.0.0.0")
 library(basecoat)
 library(htmltools)
 
@@ -16,7 +17,10 @@ function(api) {
 }
 
 logo_lines <- readLines("public/logo.svg", warn = FALSE)
-logo <- HTML(paste(grep("<title>", logo_lines, invert = TRUE, value = TRUE), collapse = "\n"))
+logo <- HTML(paste(
+  grep("<title>", logo_lines, invert = TRUE, value = TRUE),
+  collapse = "\n"
+))
 
 fonts <- tagList(
   tags$link(rel = "preconnect", href = "https://fonts.googleapis.com"),
@@ -30,7 +34,11 @@ fonts <- tagList(
 
 layout <- function(..., title, current = NULL) {
   nav <- list(
-    bc_nav_item("Coffee", href = "/products", current = identical(current, "products")),
+    bc_nav_item(
+      "Coffee",
+      href = "/products",
+      current = identical(current, "products")
+    ),
     bc_nav_item("About", href = "/about", current = identical(current, "about"))
   )
 
@@ -82,7 +90,10 @@ label <- function(coffee) {
     class = "label",
     style = paste0("background:", coffee$color),
     tags$span(class = "label-region", coffee$region),
-    tags$span(class = "label-meta", paste(coffee$country, "·", coffee$roast, "roast"))
+    tags$span(
+      class = "label-meta",
+      paste(coffee$country, "·", coffee$roast, "roast")
+    )
   )
 }
 
@@ -146,7 +157,10 @@ function() {
       class = "section container",
       tags$h2(class = "title mb-4", "This week's coffees"),
       tags$div(class = "product-grid", lapply(coffees[1:3], product_card)),
-      tags$div(style = "margin-top: 2rem", link_button("See all coffees", "/products", "outline"))
+      tags$div(
+        style = "margin-top: 2rem",
+        link_button("See all coffees", "/products", "outline")
+      )
     ),
     tags$section(
       id = "farms",
@@ -198,7 +212,12 @@ function(slug, response) {
       tags$section(
         class = "section container narrow space-y-6",
         tags$h1(class = "title", "That coffee hopped away."),
-        tags$p(class = "text-muted-foreground", "There is no coffee called ", tags$code(slug), "."),
+        tags$p(
+          class = "text-muted-foreground",
+          "There is no coffee called ",
+          tags$code(slug),
+          "."
+        ),
         link_button("Back to all coffees", "/products")
       )
     ))
@@ -227,14 +246,21 @@ function(slug, response) {
           ),
           tags$dl(
             class = "facts",
-            tags$dt("Roast"), tags$dd(coffee$roast),
-            tags$dt("Process"), tags$dd(coffee$process),
-            tags$dt("Elevation"), tags$dd(coffee$elevation),
-            tags$dt("Bag"), tags$dd("340 g, whole bean")
+            tags$dt("Roast"),
+            tags$dd(coffee$roast),
+            tags$dt("Process"),
+            tags$dd(coffee$process),
+            tags$dt("Elevation"),
+            tags$dd(coffee$elevation),
+            tags$dt("Bag"),
+            tags$dd("340 g, whole bean")
           ),
           tags$div(
             class = "flex items-center gap-4",
-            tags$span(class = "text-2xl font-semibold", paste0("$", coffee$price)),
+            tags$span(
+              class = "text-2xl font-semibold",
+              paste0("$", coffee$price)
+            ),
             bc_button("Add to bag")
           )
         )
@@ -257,7 +283,11 @@ function() {
         "My first coffee job was in high school, at the kids' cafe in the Bay",
         "Area Discovery Museum, just under the Golden Gate Bridge.",
         "We poured",
-        tags$a(href = "https://www.equatorcoffees.com/", "Equator Coffees", .noWS = "after"),
+        tags$a(
+          href = "https://www.equatorcoffees.com/",
+          "Equator Coffees",
+          .noWS = "after"
+        ),
         ", and it is still my favorite roaster.",
         "I am wearing their hat right now."
       ),

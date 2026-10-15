@@ -5,7 +5,10 @@ library(htmltools)
 source("coffees.R")
 
 logo_lines <- readLines("www/logo.svg", warn = FALSE)
-logo <- HTML(paste(grep("<title>", logo_lines, invert = TRUE, value = TRUE), collapse = "\n"))
+logo <- HTML(paste(
+  grep("<title>", logo_lines, invert = TRUE, value = TRUE),
+  collapse = "\n"
+))
 
 grass <- HTML(paste0(
   '<svg class="grass" viewBox="0 0 240 30" fill="currentColor" aria-hidden="true">',
@@ -26,7 +29,13 @@ go <- function(page) {
 }
 
 nav_button <- function(label, page, variant = NULL) {
-  tags$a(class = "btn", `data-variant` = variant, href = "#", onclick = go(page), label)
+  tags$a(
+    class = "btn",
+    `data-variant` = variant,
+    href = "#",
+    onclick = go(page),
+    label
+  )
 }
 
 label <- function(coffee) {
@@ -34,7 +43,10 @@ label <- function(coffee) {
     class = "label",
     style = paste0("background:", coffee$color),
     tags$span(class = "label-region", coffee$region),
-    tags$span(class = "label-meta", paste(coffee$country, "·", coffee$roast, "roast"))
+    tags$span(
+      class = "label-meta",
+      paste(coffee$country, "·", coffee$roast, "roast")
+    )
   )
 }
 
@@ -71,10 +83,26 @@ product_card <- function(coffee) {
 layout <- function(..., current = NULL) {
   tagList(
     bc_page_navbar(
-      title = tags$a(class = "brand", href = "#", onclick = go("home"), logo, "Jackalope"),
+      title = tags$a(
+        class = "brand",
+        href = "#",
+        onclick = go("home"),
+        logo,
+        "Jackalope"
+      ),
       nav = list(
-        bc_nav_item("Coffee", href = "#", onclick = go("products"), current = identical(current, "products")),
-        bc_nav_item("About", href = "#", onclick = go("about"), current = identical(current, "about"))
+        bc_nav_item(
+          "Coffee",
+          href = "#",
+          onclick = go("products"),
+          current = identical(current, "products")
+        ),
+        bc_nav_item(
+          "About",
+          href = "#",
+          onclick = go("about"),
+          current = identical(current, "about")
+        )
       ),
       end = tagList(
         bc_theme_switcher(),
@@ -114,7 +142,12 @@ home_page <- function() {
           tags$div(
             class = "flex flex-wrap gap-3",
             nav_button("Shop the coffee", "products"),
-            tags$a(class = "btn", `data-variant` = "outline", href = "#farms", "Meet the farms")
+            tags$a(
+              class = "btn",
+              `data-variant` = "outline",
+              href = "#farms",
+              "Meet the farms"
+            )
           )
         ),
         tags$div(class = "hero-mark", logo, grass)
@@ -124,7 +157,10 @@ home_page <- function() {
       class = "section container",
       tags$h2(class = "title mb-4", "This week's coffees"),
       tags$div(class = "product-grid", lapply(coffees[1:3], product_card)),
-      tags$div(style = "margin-top: 2rem", nav_button("See all coffees", "products", "outline"))
+      tags$div(
+        style = "margin-top: 2rem",
+        nav_button("See all coffees", "products", "outline")
+      )
     ),
     tags$section(
       id = "farms",
@@ -177,14 +213,21 @@ product_page <- function(coffee) {
           ),
           tags$dl(
             class = "facts",
-            tags$dt("Roast"), tags$dd(coffee$roast),
-            tags$dt("Process"), tags$dd(coffee$process),
-            tags$dt("Elevation"), tags$dd(coffee$elevation),
-            tags$dt("Bag"), tags$dd("340 g, whole bean")
+            tags$dt("Roast"),
+            tags$dd(coffee$roast),
+            tags$dt("Process"),
+            tags$dd(coffee$process),
+            tags$dt("Elevation"),
+            tags$dd(coffee$elevation),
+            tags$dt("Bag"),
+            tags$dd("340 g, whole bean")
           ),
           tags$div(
             class = "flex items-center gap-4",
-            tags$span(class = "text-2xl font-semibold", paste0("$", coffee$price)),
+            tags$span(
+              class = "text-2xl font-semibold",
+              paste0("$", coffee$price)
+            ),
             bc_button("Add to bag", id = "add_to_bag")
           )
         )
@@ -203,7 +246,11 @@ about_page <- function() {
         "My first coffee job was in high school, at the kids' cafe in the Bay",
         "Area Discovery Museum, just under the Golden Gate Bridge.",
         "We poured",
-        tags$a(href = "https://www.equatorcoffees.com/", "Equator Coffees", .noWS = "after"),
+        tags$a(
+          href = "https://www.equatorcoffees.com/",
+          "Equator Coffees",
+          .noWS = "after"
+        ),
         ", and it is still my favorite roaster.",
         "I am wearing their hat right now."
       ),
@@ -255,7 +302,12 @@ server <- function(input, output, session) {
     current <- page()
 
     if (startsWith(current, "product:")) {
-      return(product_page(coffees[[sub("product:", "", current, fixed = TRUE)]]))
+      return(product_page(coffees[[sub(
+        "product:",
+        "",
+        current,
+        fixed = TRUE
+      )]]))
     }
 
     switch(
