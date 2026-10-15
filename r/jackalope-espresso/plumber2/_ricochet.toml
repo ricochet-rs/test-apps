@@ -1,0 +1,17 @@
+[content]
+id = "01M50FP9G97Y6MXR45RW0R6Q7N"
+name = "Jackalope Coffee - Plumber"
+entrypoint = "_server.yml"
+access_type = "external"
+content_type = "r-server"
+slug = "coffee-plumber"
+
+[language]
+name = "r"
+packages = "renv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10
