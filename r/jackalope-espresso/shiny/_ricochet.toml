@@ -4,7 +4,7 @@ name = "Jackalope Coffee - Shiny"
 entrypoint = "app.R"
 access_type = "external"
 content_type = "shiny"
-slug = "coffee-plumber"
+slug = "coffee-shiny"
 
 [language]
 name = "r"
