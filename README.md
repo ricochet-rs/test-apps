@@ -38,6 +38,7 @@ For example, the histogram examples cover alternate R entrypoints, recurring Shi
 | [python/fastapi-hello](python/fastapi-hello/) | FastAPI | Serve API docs and a health endpoint. | ASGI; OpenAPI docs; proxy root path |
 | [python/flask-hello](python/flask-hello/) | Flask | Serve greeting and health JSON. | WSGI; Flask routing |
 | [python/marimo-high-dim-data](python/marimo-high-dim-data/) | Marimo Tables | Explore selectable and styled tables. | Reactive notebook; table widgets; Python service |
+| [python/panel-penguins-kmeans](python/panel-penguins-kmeans/) | Panel K-Means | Cluster penguins and filter the table from the chart. | Python app; Panel websocket sessions; Vega brushing; proxy root path |
 | [python/python-sleep](python/python-sleep/) | Python Sleep | Log progress through nine timed iterations. | Python batch job; log streaming; completion |
 | [python/quarto-py-hello](python/quarto-py-hello/) | Quarto Python | Render a sine plot and a calculation. | Quarto; Jupyter execution; HTML output |
 | [python/shiny-py-lonboard](python/shiny-py-lonboard/) | Housing Map | Explore King County house prices. | Shiny; Lonboard widgets; spatial filtering; Parquet |

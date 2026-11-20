@@ -1,0 +1,12 @@
+[project]
+name = "panel-penguins-kmeans"
+version = "0.1.0"
+description = "Cluster penguins with k-means and filter the table by brushing the chart."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "altair>=5.5.0",
+    "pandas>=2.3.0",
+    "panel>=1.10.0",
+    "scikit-learn>=1.7.0",
+]
