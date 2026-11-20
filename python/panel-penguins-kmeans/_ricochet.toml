@@ -1,0 +1,17 @@
+[content]
+id = "01M5TVY8NHJ6QAGWBC2H2W2V8J"
+name = "Panel K-Means"
+summary = "Cluster penguins and filter the table from the chart."
+entrypoint = "serve.py"
+access_type = "external"
+content_type = "python-app"
+
+[language]
+name = "python"
+packages = "uv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 5
+spawn_threshold = 80
+max_connections = 10
