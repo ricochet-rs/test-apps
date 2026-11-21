@@ -676,7 +676,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "altair", specifier = ">=5.5.0" },
+    { name = "altair", specifier = ">=6.3.0" },
     { name = "pandas", specifier = ">=2.3.0" },
     { name = "panel", specifier = ">=1.10.0" },
     { name = "scikit-learn", specifier = ">=1.7.0" },

@@ -474,7 +474,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "altair", specifier = ">=6.0.0" },
+    { name = "altair", specifier = ">=6.3.0" },
     { name = "marimo", specifier = ">=0.21.1" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "pandas", specifier = ">=3.0.1" },
