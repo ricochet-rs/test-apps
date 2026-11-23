@@ -1,0 +1,18 @@
+[content]
+id = "01M84ZWBEK5BJ6Y8GV95WFJ8Q9"
+name = "Notes Chat App"
+summary = "Run the notes_chat_app Django project with SQLite on persistent storage."
+entrypoint = "app.py"
+access_type = "external"
+content_type = "python-app"
+exclude = ["__pycache__", "persistent"]
+
+[language]
+name = "python"
+packages = "uv.lock"
+
+[serve]
+min_instances = 0
+max_instances = 1
+spawn_threshold = 80
+max_connections = 50

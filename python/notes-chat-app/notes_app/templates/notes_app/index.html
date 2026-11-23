@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}CrispyNotes{% endblock %}
+
+{% block body %}
+<div class="min-vh-100 d-flex flex-column">
+
+  <!-- ── Hero ──────────────────────────────────────────────────────── -->
+  <section class="flex-grow-1 d-flex align-items-center justify-content-center py-5">
+    <div class="text-center px-4" style="max-width: 700px;">
+
+      <i class="bi bi-journal-text mb-4 d-block" style="font-size: 4.5rem; color: var(--bs-primary);"></i>
+
+      <h1 class="display-4 fw-bold mb-3">CrispyNotes</h1>
+
+      <p class="fs-5 text-secondary mb-5" style="max-width: 520px; margin-inline: auto;">
+        Нотатки, списки, групи та реальний WebSocket-чат —
+        усе в одному Django-застосунку.
+      </p>
+
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="{% url 'login' %}" class="btn btn-primary btn-lg px-5">
+          <i class="bi bi-box-arrow-in-right me-2"></i>Увійти
+        </a>
+        <a href="{% url 'notes_app:register' %}" class="btn btn-outline-secondary btn-lg px-4">
+          Реєстрація
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Feature strip ─────────────────────────────────────────────── -->
+  <section class="py-5 border-top" style="border-color: rgba(255,255,255,.08) !important;">
+    <div class="container" style="max-width: 900px;">
+      <div class="row g-4 text-center">
+
+        <div class="col-6 col-md-3">
+          <i class="bi bi-journal-richtext fs-1 text-primary mb-2 d-block"></i>
+          <div class="fw-semibold mb-1">Нотатки</div>
+          <div class="small text-secondary">Теги, пріоритети, нагадування</div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <i class="bi bi-check2-square fs-1 text-success mb-2 d-block"></i>
+          <div class="fw-semibold mb-1">Списки</div>
+          <div class="small text-secondary">Справи та покупки зі sharing</div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <i class="bi bi-people fs-1 text-warning mb-2 d-block"></i>
+          <div class="fw-semibold mb-1">Групи</div>
+          <div class="small text-secondary">Спільний доступ до контенту</div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <i class="bi bi-lightning-charge fs-1 text-danger mb-2 d-block"></i>
+          <div class="fw-semibold mb-1">Чат</div>
+          <div class="small text-secondary">Real-time WebSocket у групах</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}
