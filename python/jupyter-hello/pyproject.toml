@@ -11,6 +11,6 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "ipykernel>=6.29.5",
+    "ipykernel>=7.4.0",
     "nbconvert>=7.16.6",
 ]
