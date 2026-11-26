@@ -1395,7 +1395,7 @@ dependencies = [
 requires-dist = [
     { name = "geopandas", specifier = ">=1.2.0" },
     { name = "lonboard", specifier = ">=0.17.0" },
-    { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "matplotlib", specifier = ">=3.11.2" },
     { name = "pyarrow", specifier = ">=23.0.1" },
     { name = "shiny", specifier = ">=1.6.0" },
     { name = "shinywidgets", specifier = ">=0.7.2" },
