@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
   "geopandas>=1.2.0",
-  "lonboard>=0.16.0",
+  "lonboard>=0.17.0",
   "matplotlib>=3.10.8",
   "pyarrow>=23.0.1",
   "shiny>=1.6.0",
