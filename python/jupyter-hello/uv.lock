@@ -564,7 +564,7 @@ requires-dist = [
 [package.metadata.requires-dev]
 dev = [
     { name = "ipykernel", specifier = ">=7.4.0" },
-    { name = "nbconvert", specifier = ">=7.16.6" },
+    { name = "nbconvert", specifier = ">=7.17.2" },
 ]
 
 [[package]]
