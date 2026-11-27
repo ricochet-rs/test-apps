@@ -476,7 +476,7 @@ dependencies = [
 requires-dist = [
     { name = "altair", specifier = ">=6.3.0" },
     { name = "marimo", specifier = ">=0.21.1" },
-    { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "matplotlib", specifier = ">=3.11.2" },
     { name = "pandas", specifier = ">=3.0.1" },
     { name = "polars", specifier = ">=1.39.3" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
